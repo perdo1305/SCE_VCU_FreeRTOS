@@ -1,2 +1,3 @@
 *.d
 *.o
+/SCE_VCU_FreeRTOS.X/build/

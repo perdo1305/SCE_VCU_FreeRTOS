@@ -38,13 +38,14 @@
 // *****************************************************************************
 // *****************************************************************************
 
-
+SemaphoreHandle_t ADC0_SEMAPHORE;
 
 int main(void) {
     /* Initialize all modules */
     SYS_Initialize(NULL);
-
     
+    vSemaphoreCreateBinary(ADC0_SEMAPHORE);
+
 
     while (true) {
         SYS_Tasks();
