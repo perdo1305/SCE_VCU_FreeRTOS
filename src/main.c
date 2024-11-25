@@ -43,7 +43,7 @@ SemaphoreHandle_t ADC0_SEMAPHORE;
 int main(void) {
     /* Initialize all modules */
     SYS_Initialize(NULL);
-    
+    ADCHS_CallbackRegister(ADCHS_CH0,)
     vSemaphoreCreateBinary(ADC0_SEMAPHORE);
 
 
