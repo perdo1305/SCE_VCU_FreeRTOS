@@ -1,0 +1,6 @@
+/home/pedroferreira/DEV/SCE_VCU/_build_mplab/SCE_VCU_FreeRTOS/default/image_default.elf/CMakeFiles/assembleWithPreprocess.dir
+/home/pedroferreira/DEV/SCE_VCU/_build_mplab/SCE_VCU_FreeRTOS/default/image_default.elf/CMakeFiles/compile.dir
+/home/pedroferreira/DEV/SCE_VCU/_build_mplab/SCE_VCU_FreeRTOS/default/image_default.elf/CMakeFiles/default.elf.dir
+/home/pedroferreira/DEV/SCE_VCU/_build_mplab/SCE_VCU_FreeRTOS/default/image_default.elf/CMakeFiles/Bin2Hex.dir
+/home/pedroferreira/DEV/SCE_VCU/_build_mplab/SCE_VCU_FreeRTOS/default/image_default.elf/CMakeFiles/edit_cache.dir
+/home/pedroferreira/DEV/SCE_VCU/_build_mplab/SCE_VCU_FreeRTOS/default/image_default.elf/CMakeFiles/rebuild_cache.dir
