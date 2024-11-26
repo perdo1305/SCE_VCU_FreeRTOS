@@ -22,7 +22,7 @@ SCE_VCU_FreeRTOS is a project that implements a real-time operating system (RTOS
 ## System Overview
 
 The system architecture is depicted in the diagram below:
-
+![vcu-Queues drawio](https://github.com/user-attachments/assets/58bbf85e-b0a2-4867-b6c7-dd76e5be1465)
 - **Input Tasks**:
   - Reads data from CAN bus.
   - Starts ADC conversions and processes APPS data.
