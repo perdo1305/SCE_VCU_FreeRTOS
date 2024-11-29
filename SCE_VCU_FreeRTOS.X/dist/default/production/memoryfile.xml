@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project>                                  
-  <executable name="dist/default/debug/SCE_VCU_FreeRTOS.X.debug.elf">                 
+  <executable name="dist/default/production/SCE_VCU_FreeRTOS.X.production.elf">                 
     <memory name="program">                 
       <units>bytes</units>                 
       <length>1049728</length>                 
-      <used>17116</used>                     
-      <free>1032612</free>                     
+      <used>16880</used>                     
+      <free>1032848</free>                     
     </memory>                              
     <memory name="data">              
       <units>bytes</units>                 
-      <length>263024</length>                 
-      <used>132296</used>                     
-      <free>130728</free>                     
+      <length>262144</length>                 
+      <used>130536</used>                     
+      <free>131608</free>                     
     </memory>                              
   </executable>                            
 </project>                                 

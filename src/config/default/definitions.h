@@ -56,7 +56,6 @@
 #include "peripheral/evic/plib_evic.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include "semphr.h"
 #include "can_send_task.h"
 #include "apps_task.h"
 #include "voltage_measurement_task.h"

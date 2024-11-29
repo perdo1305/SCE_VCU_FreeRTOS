@@ -167,6 +167,7 @@ static void lCAN_READ_TASK_Tasks(  void *pvParameters  )
 {   
     while(true)
     {
+        
         CAN_READ_TASK_Tasks();
         vTaskDelay(50U / portTICK_PERIOD_MS);
     }
