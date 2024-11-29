@@ -134,7 +134,7 @@ void R2D_TASK_Tasks ( void )
         }
 
         /* TODO: implement your application state machine.*/
-
+        
 
         /* The default state should never be executed. */
         default:

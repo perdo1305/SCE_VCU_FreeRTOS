@@ -28,6 +28,7 @@
 // *****************************************************************************
 
 #include "main_task.h"
+#include "definitions.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -129,13 +130,14 @@ void MAIN_TASK_Tasks ( void )
 
         case MAIN_TASK_STATE_SERVICE_TASKS:
         {
-
+            GPIO_RC11_Toggle();
+            printf("\r\n ola led");
             break;
         }
 
         /* TODO: implement your application state machine.*/
-
-
+        
+        
         /* The default state should never be executed. */
         default:
         {
