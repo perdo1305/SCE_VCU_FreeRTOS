@@ -27,7 +27,14 @@
 // *****************************************************************************
 // *****************************************************************************
 
+#include <stdio.h>
+
 #include "apps_task.h"
+#include "peripheral/adchs/plib_adchs.h"
+#ifndef FREERTOS_H
+    #include"FreeRTOS.h"
+#endif
+#include "semphr.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -52,6 +59,9 @@
 
 APPS_TASK_DATA apps_taskData;
 
+static SemaphoreHandle_t ADC0_SEMAPHORE;
+static SemaphoreHandle_t ADC3_SEMAPHORE;
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -60,6 +70,16 @@ APPS_TASK_DATA apps_taskData;
 
 /* TODO:  Add any necessary callback functions.
 */
+
+
+
+void ADC0_callback(unsigned int status, unsigned int channel) {
+    xSemaphoreGiveFromISR(ADC0_SEMAPHORE,NULL);
+}
+
+void ADC3_callback(unsigned int status, unsigned int channel) {
+    xSemaphoreGiveFromISR(ADC3_SEMAPHORE,NULL);
+}
 
 // *****************************************************************************
 // *****************************************************************************
@@ -96,6 +116,12 @@ void APPS_TASK_Initialize ( void )
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
+    
+    ADCHS_CallbackRegister(ADCHS_CH0,ADC0_callback,(uintptr_t)NULL);
+    ADCHS_CallbackRegister(ADCHS_CH3,ADC3_callback,(uintptr_t)NULL);
+    vSemaphoreCreateBinary(ADC3_SEMAPHORE);
+    vSemaphoreCreateBinary(ADC0_SEMAPHORE);
+    
 }
 
 
@@ -134,8 +160,25 @@ void APPS_TASK_Tasks ( void )
         }
 
         /* TODO: implement your application state machine.*/
-
-
+        ADCHS_ChannelConversionStart(ADCHS_CH0);
+        
+        //uint16_t adcResult_0 = 0;
+        if (xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
+        // Task unblocks here when semaphore is given
+            //adcResult_0 = ADCHS_ChannelResultGet(ADCHS_CH0);
+        }
+        if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
+        // Task unblocks here when semaphore is given
+            //adcResult_0 = ADCHS_ChannelResultGet(ADCHS_CH0);
+        }
+        uint16_t adc0value = ADCHS_ChannelResultGet(ADCHS_CH0);
+        uint16_t adc3value = ADCHS_ChannelResultGet(ADCHS_CH3);
+        
+        float voltage0 = adc0value * 1024 / 3.3;
+        float voltage3 = adc3value * 1024 / 3.3;
+        
+        printf("APPS 1: %f      APPS 3: %f",voltage0,voltage3); 
+        
         /* The default state should never be executed. */
         default:
         {
