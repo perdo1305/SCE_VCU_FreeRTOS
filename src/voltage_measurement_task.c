@@ -157,6 +157,8 @@ void VOLTAGE_MEASUREMENT_TASK_Tasks ( void )
           xSemaphoreTake(voltageMeasurementSemaphore, portMAX_DELAY);
           voltageMeasurementValue = ADCHS_ChannelResultGet(ADCHS_CH8);
 
+          printf("Voltage Measurement: %d\n", voltageMeasurementValue);
+
             break;
         }
 
