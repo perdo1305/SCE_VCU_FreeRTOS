@@ -28,6 +28,10 @@
 // *****************************************************************************
 
 #include "voltage_measurement_task.h"
+#include "definitions.h"
+
+#include "../src/config/default/peripheral/adchs/plib_adchs_common.h"
+#include "../src/config/default/peripheral/adchs/plib_adchs.h" 
 
 // *****************************************************************************
 // *****************************************************************************
@@ -52,6 +56,10 @@
 
 VOLTAGE_MEASUREMENT_TASK_DATA voltage_measurement_taskData;
 
+xSemaphoreHandle voltageMeasurementSemaphore;
+
+__COHERENT uint16_t voltageMeasurementValue;
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -60,6 +68,16 @@ VOLTAGE_MEASUREMENT_TASK_DATA voltage_measurement_taskData;
 
 /* TODO:  Add any necessary callback functions.
 */
+void ADCHS_CH8_Callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
+    static BaseType_t xHigherPriorityTaskWoken;
+
+    xHigherPriorityTaskWoken = pdFALSE;
+    
+    xSemaphoreGiveFromISR(voltageMeasurementSemaphore, &xHigherPriorityTaskWoken);
+    if (xHigherPriorityTaskWoken == pdTRUE) {
+        portYIELD();
+    }
+}
 
 // *****************************************************************************
 // *****************************************************************************
@@ -91,6 +109,12 @@ void VOLTAGE_MEASUREMENT_TASK_Initialize ( void )
     /* Place the App state machine in its initial state. */
     voltage_measurement_taskData.state = VOLTAGE_MEASUREMENT_TASK_STATE_INIT;
 
+    ADCHS_CallbackRegister(ADCHS_CH8, ADCHS_CH8_Callback, (uintptr_t)NULL);  // Voltage Measurement
+    ADCHS_ChannelResultInterruptEnable(ADCHS_CH8);
+    ADCHS_ChannelConversionStart(ADCHS_CH8);
+
+    vSemaphoreCreateBinary(voltageMeasurementSemaphore);
+    xSemaphoreTake(voltageMeasurementSemaphore, 0);
 
 
     /* TODO: Initialize your application's state machine and other
@@ -129,6 +153,9 @@ void VOLTAGE_MEASUREMENT_TASK_Tasks ( void )
 
         case VOLTAGE_MEASUREMENT_TASK_STATE_SERVICE_TASKS:
         {
+
+          xSemaphoreTake(voltageMeasurementSemaphore, portMAX_DELAY);
+          voltageMeasurementValue = ADCHS_ChannelResultGet(ADCHS_CH8);
 
             break;
         }

@@ -52,4 +52,58 @@
 #include <xc.h>
 #include "ISR_Support.h"
 
+    .extern  ADC_DATA0_Handler
+
+    .section   .vector_106,code, keep
+    .equ     __vector_dispatch_106, IntVectorADC_DATA0_Handler
+    .global  __vector_dispatch_106
+    .set     nomicromips
+    .set     noreorder
+    .set     nomips16
+    .set     noat
+    .ent  IntVectorADC_DATA0_Handler
+
+IntVectorADC_DATA0_Handler:
+    portSAVE_CONTEXT
+    la    s6,  ADC_DATA0_Handler
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end   IntVectorADC_DATA0_Handler
+    .extern  ADC_DATA1_Handler
+
+    .section   .vector_107,code, keep
+    .equ     __vector_dispatch_107, IntVectorADC_DATA1_Handler
+    .global  __vector_dispatch_107
+    .set     nomicromips
+    .set     noreorder
+    .set     nomips16
+    .set     noat
+    .ent  IntVectorADC_DATA1_Handler
+
+IntVectorADC_DATA1_Handler:
+    portSAVE_CONTEXT
+    la    s6,  ADC_DATA1_Handler
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end   IntVectorADC_DATA1_Handler
+    .extern  ADC_DATA3_Handler
+
+    .section   .vector_109,code, keep
+    .equ     __vector_dispatch_109, IntVectorADC_DATA3_Handler
+    .global  __vector_dispatch_109
+    .set     nomicromips
+    .set     noreorder
+    .set     nomips16
+    .set     noat
+    .ent  IntVectorADC_DATA3_Handler
+
+IntVectorADC_DATA3_Handler:
+    portSAVE_CONTEXT
+    la    s6,  ADC_DATA3_Handler
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end   IntVectorADC_DATA3_Handler
 
