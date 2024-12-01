@@ -58,6 +58,8 @@ VOLTAGE_MEASUREMENT_TASK_DATA voltage_measurement_taskData;
 
 xSemaphoreHandle voltageMeasurementSemaphore;
 
+QueueHandle_t  voltageMeasurementQueue;
+
 __COHERENT uint16_t voltageMeasurementValue;
 
 // *****************************************************************************
@@ -116,6 +118,9 @@ void VOLTAGE_MEASUREMENT_TASK_Initialize ( void )
     vSemaphoreCreateBinary(voltageMeasurementSemaphore);
     xSemaphoreTake(voltageMeasurementSemaphore, 0);
 
+    //creating a queue for the voltage measurement
+    voltageMeasurementQueue = xQueueCreate(10, sizeof(uint16_t));
+
 
     /* TODO: Initialize your application's state machine and other
      * parameters.
@@ -153,10 +158,14 @@ void VOLTAGE_MEASUREMENT_TASK_Tasks ( void )
 
         case VOLTAGE_MEASUREMENT_TASK_STATE_SERVICE_TASKS:
         {
-
+          static uint16_t adcResult;
+          
           xSemaphoreTake(voltageMeasurementSemaphore, portMAX_DELAY);
-          voltageMeasurementValue = ADCHS_ChannelResultGet(ADCHS_CH8);
+          adcResult = ADCHS_ChannelResultGet(ADCHS_CH8);
 
+          voltageMeasurementValue = (uint16_t) ((adcResult * 3300) / 4095);
+           
+          xQueueSendToBack(voltageMeasurementQueue, &voltageMeasurementValue, 0);
           printf("Voltage Measurement: %d\n", voltageMeasurementValue);
 
             break;
