@@ -57,35 +57,11 @@
 // Section: RTOS "Tasks" Handles
 // *****************************************************************************
 // *****************************************************************************
-/* Declaration of  CAN_SEND_TASK_Tasks task handle */
-extern TaskHandle_t xCAN_SEND_TASK_Tasks;
-
 /* Declaration of  APPS_TASK_Tasks task handle */
 extern TaskHandle_t xAPPS_TASK_Tasks;
 
-/* Declaration of  VOLTAGE_MEASUREMENT_TASK_Tasks task handle */
-extern TaskHandle_t xVOLTAGE_MEASUREMENT_TASK_Tasks;
-
-/* Declaration of  INVERTER_TASK_Tasks task handle */
-extern TaskHandle_t xINVERTER_TASK_Tasks;
-
-/* Declaration of  DASHBOARD_TASK_Tasks task handle */
-extern TaskHandle_t xDASHBOARD_TASK_Tasks;
-
-/* Declaration of  OLED_TASK_Tasks task handle */
-extern TaskHandle_t xOLED_TASK_Tasks;
-
-/* Declaration of  R2D_TASK_Tasks task handle */
-extern TaskHandle_t xR2D_TASK_Tasks;
-
-/* Declaration of  AS_EMERGENCY_TASK_Tasks task handle */
-extern TaskHandle_t xAS_EMERGENCY_TASK_Tasks;
-
 /* Declaration of  MAIN_TASK_Tasks task handle */
 extern TaskHandle_t xMAIN_TASK_Tasks;
-
-/* Declaration of  CAN_READ_TASK_Tasks task handle */
-extern TaskHandle_t xCAN_READ_TASK_Tasks;
 
 
 

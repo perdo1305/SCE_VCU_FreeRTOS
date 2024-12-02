@@ -60,17 +60,6 @@
 // Section: RTOS "Tasks" Routine
 // *****************************************************************************
 // *****************************************************************************
-/* Handle for the CAN_SEND_TASK_Tasks. */
-TaskHandle_t xCAN_SEND_TASK_Tasks;
-
-static void lCAN_SEND_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        CAN_SEND_TASK_Tasks();
-        vTaskDelay(100U / portTICK_PERIOD_MS);
-    }
-}
 /* Handle for the APPS_TASK_Tasks. */
 TaskHandle_t xAPPS_TASK_Tasks;
 
@@ -82,72 +71,6 @@ static void lAPPS_TASK_Tasks(  void *pvParameters  )
         vTaskDelay(500U / portTICK_PERIOD_MS);
     }
 }
-/* Handle for the VOLTAGE_MEASUREMENT_TASK_Tasks. */
-TaskHandle_t xVOLTAGE_MEASUREMENT_TASK_Tasks;
-
-static void lVOLTAGE_MEASUREMENT_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        VOLTAGE_MEASUREMENT_TASK_Tasks();
-        vTaskDelay(1U / portTICK_PERIOD_MS);
-    }
-}
-/* Handle for the INVERTER_TASK_Tasks. */
-TaskHandle_t xINVERTER_TASK_Tasks;
-
-static void lINVERTER_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        INVERTER_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
-    }
-}
-/* Handle for the DASHBOARD_TASK_Tasks. */
-TaskHandle_t xDASHBOARD_TASK_Tasks;
-
-static void lDASHBOARD_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        DASHBOARD_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
-    }
-}
-/* Handle for the OLED_TASK_Tasks. */
-TaskHandle_t xOLED_TASK_Tasks;
-
-static void lOLED_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        OLED_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
-    }
-}
-/* Handle for the R2D_TASK_Tasks. */
-TaskHandle_t xR2D_TASK_Tasks;
-
-static void lR2D_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        R2D_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
-    }
-}
-/* Handle for the AS_EMERGENCY_TASK_Tasks. */
-TaskHandle_t xAS_EMERGENCY_TASK_Tasks;
-
-static void lAS_EMERGENCY_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        AS_EMERGENCY_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
-    }
-}
 /* Handle for the MAIN_TASK_Tasks. */
 TaskHandle_t xMAIN_TASK_Tasks;
 
@@ -157,17 +80,6 @@ static void lMAIN_TASK_Tasks(  void *pvParameters  )
     {
         MAIN_TASK_Tasks();
         vTaskDelay(500U / portTICK_PERIOD_MS);
-    }
-}
-/* Handle for the CAN_READ_TASK_Tasks. */
-TaskHandle_t xCAN_READ_TASK_Tasks;
-
-static void lCAN_READ_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        CAN_READ_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
     }
 }
 
@@ -199,15 +111,7 @@ void SYS_Tasks ( void )
     
 
     /* Maintain the application's state machine. */
-        /* Create OS Thread for CAN_SEND_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lCAN_SEND_TASK_Tasks,
-                "CAN_SEND_TASK_Tasks",
-                1024,
-                NULL,
-                2,
-                &xCAN_SEND_TASK_Tasks);
-
-    /* Create OS Thread for APPS_TASK_Tasks. */
+        /* Create OS Thread for APPS_TASK_Tasks. */
     (void) xTaskCreate((TaskFunction_t) lAPPS_TASK_Tasks,
                 "APPS_TASK_Tasks",
                 1024,
@@ -215,69 +119,13 @@ void SYS_Tasks ( void )
                 1,
                 &xAPPS_TASK_Tasks);
 
-    /* Create OS Thread for VOLTAGE_MEASUREMENT_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lVOLTAGE_MEASUREMENT_TASK_Tasks,
-                "VOLTAGE_MEASUREMENT_TASK_Tasks",
-                1024,
-                NULL,
-                1,
-                &xVOLTAGE_MEASUREMENT_TASK_Tasks);
-
-    /* Create OS Thread for INVERTER_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lINVERTER_TASK_Tasks,
-                "INVERTER_TASK_Tasks",
-                1024,
-                NULL,
-                1,
-                &xINVERTER_TASK_Tasks);
-
-    /* Create OS Thread for DASHBOARD_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lDASHBOARD_TASK_Tasks,
-                "DASHBOARD_TASK_Tasks",
-                1024,
-                NULL,
-                1,
-                &xDASHBOARD_TASK_Tasks);
-
-    /* Create OS Thread for OLED_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lOLED_TASK_Tasks,
-                "OLED_TASK_Tasks",
-                1024,
-                NULL,
-                1,
-                &xOLED_TASK_Tasks);
-
-    /* Create OS Thread for R2D_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lR2D_TASK_Tasks,
-                "R2D_TASK_Tasks",
-                1024,
-                NULL,
-                1,
-                &xR2D_TASK_Tasks);
-
-    /* Create OS Thread for AS_EMERGENCY_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lAS_EMERGENCY_TASK_Tasks,
-                "AS_EMERGENCY_TASK_Tasks",
-                1024,
-                NULL,
-                1,
-                &xAS_EMERGENCY_TASK_Tasks);
-
     /* Create OS Thread for MAIN_TASK_Tasks. */
     (void) xTaskCreate((TaskFunction_t) lMAIN_TASK_Tasks,
                 "MAIN_TASK_Tasks",
                 1024,
                 NULL,
-                5,
+                -2,
                 &xMAIN_TASK_Tasks);
-
-    /* Create OS Thread for CAN_READ_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lCAN_READ_TASK_Tasks,
-                "CAN_READ_TASK_Tasks",
-                1024,
-                NULL,
-                1,
-                &xCAN_READ_TASK_Tasks);
 
 
 
