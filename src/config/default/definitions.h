@@ -55,18 +55,10 @@
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/evic/plib_evic.h"
 #include "FreeRTOS.h"
-#include "task.h"
 #include "semphr.h"
-#include "can_send_task.h"
-#include "apps_task.h"
+#include "task.h"
 #include "voltage_measurement_task.h"
-#include "inverter_task.h"
-#include "dashboard_task.h"
-#include "oled_task.h"
-#include "r2d_task.h"
-#include "as_emergency_task.h"
 #include "main_task.h"
-#include "can_read_task.h"
 
 
 
