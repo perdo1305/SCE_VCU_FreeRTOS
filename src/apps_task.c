@@ -157,18 +157,14 @@ void APPS_TASK_Tasks ( void )
         case APPS_TASK_STATE_SERVICE_TASKS:
         {
             ADCHS_ChannelConversionStart(ADCHS_CH0);
-            
-//        printf("\n\n\rStarted conversion\n\n\r");
-        //uint16_t adcResult_0 = 0;
-        if (xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
+
+        if(xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
         // Task unblocks here when semaphore is given
-            //adcResult_0 = ADCHS_ChannelResultGet(ADCHS_CH0);
         }
             ADCHS_ChannelConversionStart(ADCHS_CH3);
 //        printf("\n\n\r Ended conversion\n\n\r");
         if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
         // Task unblocks here when semaphore is given
-            //adcResult_0 = ADCHS_ChannelResultGet(ADCHS_CH0);
         }
         uint16_t adc0value = ADCHS_ChannelResultGet(ADCHS_CH0);
         uint16_t adc3value = ADCHS_ChannelResultGet(ADCHS_CH3);
