@@ -5,9 +5,17 @@
         <group>
             <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/third_party/rtos/FreeRTOS/Source/include/queue.h</file>
             <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/config/default/peripheral/adchs/plib_adchs_common.h</file>
+            <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h</file>
+            <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/config/default/freertos_hooks.c</file>
+            <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/config/default/definitions.h</file>
             <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/config/default/peripheral/adchs/plib_adchs.h</file>
+            <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/config/default/tasks.c</file>
+            <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/voltage_measurement_task.h</file>
+            <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/main.c</file>
+            <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/third_party/rtos/FreeRTOS/Source/include/semphr.h</file>
             <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/voltage_measurement_task.c</file>
             <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/config/default/peripheral/adchs/plib_adchs.c</file>
+            <file>file:/home/pedroferreira/DEV/SCE_VCU_FreeRTOS/src/main_task.c</file>
         </group>
     </open-files>
 </project-private>

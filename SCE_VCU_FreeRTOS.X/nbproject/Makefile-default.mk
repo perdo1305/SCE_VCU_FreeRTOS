@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../src/config/default/peripheral/adchs/plib_adchs.c ../src/config/default/peripheral/clk/plib_clk.c ../src/config/default/peripheral/evic/plib_evic.c ../src/config/default/peripheral/gpio/plib_gpio.c ../src/config/default/peripheral/uart/plib_uart1.c ../src/config/default/stdio/xc32_monitor.c ../src/config/default/exceptions.c ../src/config/default/initialization.c ../src/config/default/freertos_hooks.c ../src/config/default/tasks.c ../src/config/default/interrupts.c ../src/config/default/interrupts_a.S ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port.c ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port_asm.S ../src/third_party/rtos/FreeRTOS/Source/list.c ../src/third_party/rtos/FreeRTOS/Source/queue.c ../src/third_party/rtos/FreeRTOS/Source/timers.c ../src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c ../src/third_party/rtos/FreeRTOS/Source/croutine.c ../src/third_party/rtos/FreeRTOS/Source/event_groups.c ../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c ../src/main.c ../src/dashboard_task.c ../src/inverter_task.c ../src/main_task.c ../src/r2d_task.c ../src/apps_task.c ../src/can_send_task.c ../src/as_emergency_task.c ../src/oled_task.c ../src/can_read_task.c ../src/voltage_measurement_task.c
+SOURCEFILES_QUOTED_IF_SPACED=../src/config/default/peripheral/adchs/plib_adchs.c ../src/config/default/peripheral/clk/plib_clk.c ../src/config/default/peripheral/evic/plib_evic.c ../src/config/default/peripheral/gpio/plib_gpio.c ../src/config/default/peripheral/uart/plib_uart1.c ../src/config/default/stdio/xc32_monitor.c ../src/config/default/exceptions.c ../src/config/default/initialization.c ../src/config/default/freertos_hooks.c ../src/config/default/tasks.c ../src/config/default/interrupts.c ../src/config/default/interrupts_a.S ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port.c ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port_asm.S ../src/third_party/rtos/FreeRTOS/Source/list.c ../src/third_party/rtos/FreeRTOS/Source/queue.c ../src/third_party/rtos/FreeRTOS/Source/timers.c ../src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c ../src/third_party/rtos/FreeRTOS/Source/croutine.c ../src/third_party/rtos/FreeRTOS/Source/event_groups.c ../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c ../src/main.c ../src/main_task.c ../src/voltage_measurement_task.c ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1982400153/plib_adchs.o ${OBJECTDIR}/_ext/60165520/plib_clk.o ${OBJECTDIR}/_ext/1865200349/plib_evic.o ${OBJECTDIR}/_ext/1865254177/plib_gpio.o ${OBJECTDIR}/_ext/1865657120/plib_uart1.o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ${OBJECTDIR}/_ext/1171490990/exceptions.o ${OBJECTDIR}/_ext/1171490990/initialization.o ${OBJECTDIR}/_ext/1171490990/freertos_hooks.o ${OBJECTDIR}/_ext/1171490990/tasks.o ${OBJECTDIR}/_ext/1171490990/interrupts.o ${OBJECTDIR}/_ext/1171490990/interrupts_a.o ${OBJECTDIR}/_ext/1665200909/heap_2.o ${OBJECTDIR}/_ext/951553261/port.o ${OBJECTDIR}/_ext/951553261/port_asm.o ${OBJECTDIR}/_ext/404212886/list.o ${OBJECTDIR}/_ext/404212886/queue.o ${OBJECTDIR}/_ext/404212886/timers.o ${OBJECTDIR}/_ext/404212886/FreeRTOS_tasks.o ${OBJECTDIR}/_ext/404212886/croutine.o ${OBJECTDIR}/_ext/404212886/event_groups.o ${OBJECTDIR}/_ext/404212886/stream_buffer.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1360937237/dashboard_task.o ${OBJECTDIR}/_ext/1360937237/inverter_task.o ${OBJECTDIR}/_ext/1360937237/main_task.o ${OBJECTDIR}/_ext/1360937237/r2d_task.o ${OBJECTDIR}/_ext/1360937237/apps_task.o ${OBJECTDIR}/_ext/1360937237/can_send_task.o ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o ${OBJECTDIR}/_ext/1360937237/oled_task.o ${OBJECTDIR}/_ext/1360937237/can_read_task.o ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1982400153/plib_adchs.o.d ${OBJECTDIR}/_ext/60165520/plib_clk.o.d ${OBJECTDIR}/_ext/1865200349/plib_evic.o.d ${OBJECTDIR}/_ext/1865254177/plib_gpio.o.d ${OBJECTDIR}/_ext/1865657120/plib_uart1.o.d ${OBJECTDIR}/_ext/163028504/xc32_monitor.o.d ${OBJECTDIR}/_ext/1171490990/exceptions.o.d ${OBJECTDIR}/_ext/1171490990/initialization.o.d ${OBJECTDIR}/_ext/1171490990/freertos_hooks.o.d ${OBJECTDIR}/_ext/1171490990/tasks.o.d ${OBJECTDIR}/_ext/1171490990/interrupts.o.d ${OBJECTDIR}/_ext/1171490990/interrupts_a.o.d ${OBJECTDIR}/_ext/1665200909/heap_2.o.d ${OBJECTDIR}/_ext/951553261/port.o.d ${OBJECTDIR}/_ext/951553261/port_asm.o.d ${OBJECTDIR}/_ext/404212886/list.o.d ${OBJECTDIR}/_ext/404212886/queue.o.d ${OBJECTDIR}/_ext/404212886/timers.o.d ${OBJECTDIR}/_ext/404212886/FreeRTOS_tasks.o.d ${OBJECTDIR}/_ext/404212886/croutine.o.d ${OBJECTDIR}/_ext/404212886/event_groups.o.d ${OBJECTDIR}/_ext/404212886/stream_buffer.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d ${OBJECTDIR}/_ext/1360937237/dashboard_task.o.d ${OBJECTDIR}/_ext/1360937237/inverter_task.o.d ${OBJECTDIR}/_ext/1360937237/main_task.o.d ${OBJECTDIR}/_ext/1360937237/r2d_task.o.d ${OBJECTDIR}/_ext/1360937237/apps_task.o.d ${OBJECTDIR}/_ext/1360937237/can_send_task.o.d ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o.d ${OBJECTDIR}/_ext/1360937237/oled_task.o.d ${OBJECTDIR}/_ext/1360937237/can_read_task.o.d ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1982400153/plib_adchs.o ${OBJECTDIR}/_ext/60165520/plib_clk.o ${OBJECTDIR}/_ext/1865200349/plib_evic.o ${OBJECTDIR}/_ext/1865254177/plib_gpio.o ${OBJECTDIR}/_ext/1865657120/plib_uart1.o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ${OBJECTDIR}/_ext/1171490990/exceptions.o ${OBJECTDIR}/_ext/1171490990/initialization.o ${OBJECTDIR}/_ext/1171490990/freertos_hooks.o ${OBJECTDIR}/_ext/1171490990/tasks.o ${OBJECTDIR}/_ext/1171490990/interrupts.o ${OBJECTDIR}/_ext/1171490990/interrupts_a.o ${OBJECTDIR}/_ext/951553261/port.o ${OBJECTDIR}/_ext/951553261/port_asm.o ${OBJECTDIR}/_ext/404212886/list.o ${OBJECTDIR}/_ext/404212886/queue.o ${OBJECTDIR}/_ext/404212886/timers.o ${OBJECTDIR}/_ext/404212886/FreeRTOS_tasks.o ${OBJECTDIR}/_ext/404212886/croutine.o ${OBJECTDIR}/_ext/404212886/event_groups.o ${OBJECTDIR}/_ext/404212886/stream_buffer.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1360937237/main_task.o ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o ${OBJECTDIR}/_ext/1665200909/heap_2.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1982400153/plib_adchs.o.d ${OBJECTDIR}/_ext/60165520/plib_clk.o.d ${OBJECTDIR}/_ext/1865200349/plib_evic.o.d ${OBJECTDIR}/_ext/1865254177/plib_gpio.o.d ${OBJECTDIR}/_ext/1865657120/plib_uart1.o.d ${OBJECTDIR}/_ext/163028504/xc32_monitor.o.d ${OBJECTDIR}/_ext/1171490990/exceptions.o.d ${OBJECTDIR}/_ext/1171490990/initialization.o.d ${OBJECTDIR}/_ext/1171490990/freertos_hooks.o.d ${OBJECTDIR}/_ext/1171490990/tasks.o.d ${OBJECTDIR}/_ext/1171490990/interrupts.o.d ${OBJECTDIR}/_ext/1171490990/interrupts_a.o.d ${OBJECTDIR}/_ext/951553261/port.o.d ${OBJECTDIR}/_ext/951553261/port_asm.o.d ${OBJECTDIR}/_ext/404212886/list.o.d ${OBJECTDIR}/_ext/404212886/queue.o.d ${OBJECTDIR}/_ext/404212886/timers.o.d ${OBJECTDIR}/_ext/404212886/FreeRTOS_tasks.o.d ${OBJECTDIR}/_ext/404212886/croutine.o.d ${OBJECTDIR}/_ext/404212886/event_groups.o.d ${OBJECTDIR}/_ext/404212886/stream_buffer.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d ${OBJECTDIR}/_ext/1360937237/main_task.o.d ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o.d ${OBJECTDIR}/_ext/1665200909/heap_2.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1982400153/plib_adchs.o ${OBJECTDIR}/_ext/60165520/plib_clk.o ${OBJECTDIR}/_ext/1865200349/plib_evic.o ${OBJECTDIR}/_ext/1865254177/plib_gpio.o ${OBJECTDIR}/_ext/1865657120/plib_uart1.o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ${OBJECTDIR}/_ext/1171490990/exceptions.o ${OBJECTDIR}/_ext/1171490990/initialization.o ${OBJECTDIR}/_ext/1171490990/freertos_hooks.o ${OBJECTDIR}/_ext/1171490990/tasks.o ${OBJECTDIR}/_ext/1171490990/interrupts.o ${OBJECTDIR}/_ext/1171490990/interrupts_a.o ${OBJECTDIR}/_ext/1665200909/heap_2.o ${OBJECTDIR}/_ext/951553261/port.o ${OBJECTDIR}/_ext/951553261/port_asm.o ${OBJECTDIR}/_ext/404212886/list.o ${OBJECTDIR}/_ext/404212886/queue.o ${OBJECTDIR}/_ext/404212886/timers.o ${OBJECTDIR}/_ext/404212886/FreeRTOS_tasks.o ${OBJECTDIR}/_ext/404212886/croutine.o ${OBJECTDIR}/_ext/404212886/event_groups.o ${OBJECTDIR}/_ext/404212886/stream_buffer.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1360937237/dashboard_task.o ${OBJECTDIR}/_ext/1360937237/inverter_task.o ${OBJECTDIR}/_ext/1360937237/main_task.o ${OBJECTDIR}/_ext/1360937237/r2d_task.o ${OBJECTDIR}/_ext/1360937237/apps_task.o ${OBJECTDIR}/_ext/1360937237/can_send_task.o ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o ${OBJECTDIR}/_ext/1360937237/oled_task.o ${OBJECTDIR}/_ext/1360937237/can_read_task.o ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o
+OBJECTFILES=${OBJECTDIR}/_ext/1982400153/plib_adchs.o ${OBJECTDIR}/_ext/60165520/plib_clk.o ${OBJECTDIR}/_ext/1865200349/plib_evic.o ${OBJECTDIR}/_ext/1865254177/plib_gpio.o ${OBJECTDIR}/_ext/1865657120/plib_uart1.o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ${OBJECTDIR}/_ext/1171490990/exceptions.o ${OBJECTDIR}/_ext/1171490990/initialization.o ${OBJECTDIR}/_ext/1171490990/freertos_hooks.o ${OBJECTDIR}/_ext/1171490990/tasks.o ${OBJECTDIR}/_ext/1171490990/interrupts.o ${OBJECTDIR}/_ext/1171490990/interrupts_a.o ${OBJECTDIR}/_ext/951553261/port.o ${OBJECTDIR}/_ext/951553261/port_asm.o ${OBJECTDIR}/_ext/404212886/list.o ${OBJECTDIR}/_ext/404212886/queue.o ${OBJECTDIR}/_ext/404212886/timers.o ${OBJECTDIR}/_ext/404212886/FreeRTOS_tasks.o ${OBJECTDIR}/_ext/404212886/croutine.o ${OBJECTDIR}/_ext/404212886/event_groups.o ${OBJECTDIR}/_ext/404212886/stream_buffer.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1360937237/main_task.o ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o ${OBJECTDIR}/_ext/1665200909/heap_2.o
 
 # Source Files
-SOURCEFILES=../src/config/default/peripheral/adchs/plib_adchs.c ../src/config/default/peripheral/clk/plib_clk.c ../src/config/default/peripheral/evic/plib_evic.c ../src/config/default/peripheral/gpio/plib_gpio.c ../src/config/default/peripheral/uart/plib_uart1.c ../src/config/default/stdio/xc32_monitor.c ../src/config/default/exceptions.c ../src/config/default/initialization.c ../src/config/default/freertos_hooks.c ../src/config/default/tasks.c ../src/config/default/interrupts.c ../src/config/default/interrupts_a.S ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port.c ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port_asm.S ../src/third_party/rtos/FreeRTOS/Source/list.c ../src/third_party/rtos/FreeRTOS/Source/queue.c ../src/third_party/rtos/FreeRTOS/Source/timers.c ../src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c ../src/third_party/rtos/FreeRTOS/Source/croutine.c ../src/third_party/rtos/FreeRTOS/Source/event_groups.c ../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c ../src/main.c ../src/dashboard_task.c ../src/inverter_task.c ../src/main_task.c ../src/r2d_task.c ../src/apps_task.c ../src/can_send_task.c ../src/as_emergency_task.c ../src/oled_task.c ../src/can_read_task.c ../src/voltage_measurement_task.c
+SOURCEFILES=../src/config/default/peripheral/adchs/plib_adchs.c ../src/config/default/peripheral/clk/plib_clk.c ../src/config/default/peripheral/evic/plib_evic.c ../src/config/default/peripheral/gpio/plib_gpio.c ../src/config/default/peripheral/uart/plib_uart1.c ../src/config/default/stdio/xc32_monitor.c ../src/config/default/exceptions.c ../src/config/default/initialization.c ../src/config/default/freertos_hooks.c ../src/config/default/tasks.c ../src/config/default/interrupts.c ../src/config/default/interrupts_a.S ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port.c ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port_asm.S ../src/third_party/rtos/FreeRTOS/Source/list.c ../src/third_party/rtos/FreeRTOS/Source/queue.c ../src/third_party/rtos/FreeRTOS/Source/timers.c ../src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c ../src/third_party/rtos/FreeRTOS/Source/croutine.c ../src/third_party/rtos/FreeRTOS/Source/event_groups.c ../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c ../src/main.c ../src/main_task.c ../src/voltage_measurement_task.c ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c
 
 
 
@@ -199,12 +199,6 @@ ${OBJECTDIR}/_ext/1171490990/interrupts.o: ../src/config/default/interrupts.c  .
 	@${RM} ${OBJECTDIR}/_ext/1171490990/interrupts.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/interrupts.o.d" -o ${OBJECTDIR}/_ext/1171490990/interrupts.o ../src/config/default/interrupts.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/_ext/1665200909/heap_2.o: ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c  .generated_files/flags/default/25e9277c6ea118c1bc4d286b26b58fb927a66e84 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1665200909" 
-	@${RM} ${OBJECTDIR}/_ext/1665200909/heap_2.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1665200909/heap_2.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1665200909/heap_2.o.d" -o ${OBJECTDIR}/_ext/1665200909/heap_2.o ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/_ext/951553261/port.o: ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port.c  .generated_files/flags/default/3caafaec16891df8f855abc6bc8c63632867d3ce .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/951553261" 
 	@${RM} ${OBJECTDIR}/_ext/951553261/port.o.d 
@@ -259,65 +253,23 @@ ${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/defau
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/_ext/1360937237/dashboard_task.o: ../src/dashboard_task.c  .generated_files/flags/default/7af4b18fd1889e1e2dcf56c61c7ea2b1b723b5a9 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/dashboard_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/dashboard_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/dashboard_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/dashboard_task.o ../src/dashboard_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/inverter_task.o: ../src/inverter_task.c  .generated_files/flags/default/e44cd0255d452fff3f83b83c2f3c3f4854095fea .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/inverter_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/inverter_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/inverter_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/inverter_task.o ../src/inverter_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/_ext/1360937237/main_task.o: ../src/main_task.c  .generated_files/flags/default/ede382d016e2a7f362854c2be2ebab857d267fa7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main_task.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main_task.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/main_task.o ../src/main_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/_ext/1360937237/r2d_task.o: ../src/r2d_task.c  .generated_files/flags/default/2acd93ebc76d2f160eb86ce185c14b2bdf1b363 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/r2d_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/r2d_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/r2d_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/r2d_task.o ../src/r2d_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/apps_task.o: ../src/apps_task.c  .generated_files/flags/default/7b3ecf893f00408ed0e35c507aedcacd326a6b7e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/apps_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/apps_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/apps_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/apps_task.o ../src/apps_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/can_send_task.o: ../src/can_send_task.c  .generated_files/flags/default/4624a48f1f1fed351586c8e6ef25f512d76c07f1 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/can_send_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/can_send_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/can_send_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/can_send_task.o ../src/can_send_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/as_emergency_task.o: ../src/as_emergency_task.c  .generated_files/flags/default/781b962af692daadde81235d01a26fbe5c5d5086 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/as_emergency_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o ../src/as_emergency_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/oled_task.o: ../src/oled_task.c  .generated_files/flags/default/bf9fd08a790954ed94b730828ad83073194f0acf .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/oled_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/oled_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/oled_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/oled_task.o ../src/oled_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/can_read_task.o: ../src/can_read_task.c  .generated_files/flags/default/d947e13ca2056b480d39217223c5426a4f28e9e2 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/can_read_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/can_read_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/can_read_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/can_read_task.o ../src/can_read_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o: ../src/voltage_measurement_task.c  .generated_files/flags/default/11d9c22249a76322cbe41e8385f51bd86d40e1f2 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o ../src/voltage_measurement_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/1665200909/heap_2.o: ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c  .generated_files/flags/default/25e9277c6ea118c1bc4d286b26b58fb927a66e84 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1665200909" 
+	@${RM} ${OBJECTDIR}/_ext/1665200909/heap_2.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1665200909/heap_2.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1665200909/heap_2.o.d" -o ${OBJECTDIR}/_ext/1665200909/heap_2.o ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 else
 ${OBJECTDIR}/_ext/1982400153/plib_adchs.o: ../src/config/default/peripheral/adchs/plib_adchs.c  .generated_files/flags/default/2a0c334ccf87eae929302b16095ef11f0857861b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -386,12 +338,6 @@ ${OBJECTDIR}/_ext/1171490990/interrupts.o: ../src/config/default/interrupts.c  .
 	@${RM} ${OBJECTDIR}/_ext/1171490990/interrupts.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/interrupts.o.d" -o ${OBJECTDIR}/_ext/1171490990/interrupts.o ../src/config/default/interrupts.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/_ext/1665200909/heap_2.o: ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c  .generated_files/flags/default/6575a021d7f309b73695575e283747cc51fce9c8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1665200909" 
-	@${RM} ${OBJECTDIR}/_ext/1665200909/heap_2.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1665200909/heap_2.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1665200909/heap_2.o.d" -o ${OBJECTDIR}/_ext/1665200909/heap_2.o ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/_ext/951553261/port.o: ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK/port.c  .generated_files/flags/default/3b10e4c8c2f2a988ba9c9ce07b6bb39441fca53d .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/951553261" 
 	@${RM} ${OBJECTDIR}/_ext/951553261/port.o.d 
@@ -446,65 +392,23 @@ ${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/defau
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/_ext/1360937237/dashboard_task.o: ../src/dashboard_task.c  .generated_files/flags/default/118f372aeb749a4aadd1701b578865c263245806 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/dashboard_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/dashboard_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/dashboard_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/dashboard_task.o ../src/dashboard_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/inverter_task.o: ../src/inverter_task.c  .generated_files/flags/default/9bfb9811793658465566088af5eef8902e23e01f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/inverter_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/inverter_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/inverter_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/inverter_task.o ../src/inverter_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/_ext/1360937237/main_task.o: ../src/main_task.c  .generated_files/flags/default/bc8f6bd70b6c563f6d2c5d8b098c5472b91b95f9 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main_task.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main_task.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/main_task.o ../src/main_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/_ext/1360937237/r2d_task.o: ../src/r2d_task.c  .generated_files/flags/default/e4a19328dcd1417cb3c3f81469b08df8246d810c .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/r2d_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/r2d_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/r2d_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/r2d_task.o ../src/r2d_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/apps_task.o: ../src/apps_task.c  .generated_files/flags/default/31c244719864b335d1fd56b137b5ccc9a0000058 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/apps_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/apps_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/apps_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/apps_task.o ../src/apps_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/can_send_task.o: ../src/can_send_task.c  .generated_files/flags/default/5b430a37d4774a47856f7b056bf2c55d7d73b2c9 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/can_send_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/can_send_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/can_send_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/can_send_task.o ../src/can_send_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/as_emergency_task.o: ../src/as_emergency_task.c  .generated_files/flags/default/6cd480e39310694a0479bc204f51dcf30b3cdd4 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/as_emergency_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/as_emergency_task.o ../src/as_emergency_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/oled_task.o: ../src/oled_task.c  .generated_files/flags/default/ff9797af9b48fdf2ff39ec4e6ea80032a767fee8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/oled_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/oled_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/oled_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/oled_task.o ../src/oled_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/_ext/1360937237/can_read_task.o: ../src/can_read_task.c  .generated_files/flags/default/4168a874eb6582a9c187650355bd8114f4522746 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/can_read_task.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/can_read_task.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/can_read_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/can_read_task.o ../src/can_read_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o: ../src/voltage_measurement_task.c  .generated_files/flags/default/1825d6fdfca17f6113cb0ed36b88cd620eb7d2c3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o.d" -o ${OBJECTDIR}/_ext/1360937237/voltage_measurement_task.o ../src/voltage_measurement_task.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/1665200909/heap_2.o: ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c  .generated_files/flags/default/6575a021d7f309b73695575e283747cc51fce9c8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1665200909" 
+	@${RM} ${OBJECTDIR}/_ext/1665200909/heap_2.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1665200909/heap_2.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/third_party/rtos/FreeRTOS/Source/include" -I"../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MK" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1665200909/heap_2.o.d" -o ${OBJECTDIR}/_ext/1665200909/heap_2.o ../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 endif
 
