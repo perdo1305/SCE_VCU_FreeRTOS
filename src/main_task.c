@@ -131,7 +131,7 @@ void MAIN_TASK_Tasks ( void )
         case MAIN_TASK_STATE_SERVICE_TASKS:
         {
             GPIO_RC11_Toggle();
-            printf("\r\n ola led");
+           // printf("\r\n ola led");
             break;
         }
 

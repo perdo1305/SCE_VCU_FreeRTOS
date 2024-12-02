@@ -35,6 +35,7 @@
     #include"FreeRTOS.h"
 #endif
 #include "semphr.h"
+#include "definitions.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -155,18 +156,16 @@ void APPS_TASK_Tasks ( void )
 
         case APPS_TASK_STATE_SERVICE_TASKS:
         {
-
-            break;
-        }
-
-        /* TODO: implement your application state machine.*/
-        ADCHS_ChannelConversionStart(ADCHS_CH0);
-        
+            ADCHS_ChannelConversionStart(ADCHS_CH0);
+            
+//        printf("\n\n\rStarted conversion\n\n\r");
         //uint16_t adcResult_0 = 0;
         if (xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
         // Task unblocks here when semaphore is given
             //adcResult_0 = ADCHS_ChannelResultGet(ADCHS_CH0);
         }
+            ADCHS_ChannelConversionStart(ADCHS_CH3);
+//        printf("\n\n\r Ended conversion\n\n\r");
         if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
         // Task unblocks here when semaphore is given
             //adcResult_0 = ADCHS_ChannelResultGet(ADCHS_CH0);
@@ -176,9 +175,15 @@ void APPS_TASK_Tasks ( void )
         
         float voltage0 = adc0value * 1024 / 3.3;
         float voltage3 = adc3value * 1024 / 3.3;
-        
-        printf("APPS 1: %f      APPS 3: %f",voltage0,voltage3); 
-        
+        voltage0 = voltage0 + 0;
+        voltage3 = voltage3 + 0;
+ //       printf("APPS 1: %f      APPS 3: %f",voltage0,voltage3); 
+      
+            break;
+        }
+
+        /* TODO: implement your application state machine.*/
+          
         /* The default state should never be executed. */
         default:
         {

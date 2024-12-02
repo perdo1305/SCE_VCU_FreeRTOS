@@ -78,9 +78,8 @@ static void lAPPS_TASK_Tasks(  void *pvParameters  )
 {   
     while(true)
     {
-        
         APPS_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
+        vTaskDelay(500U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the VOLTAGE_MEASUREMENT_TASK_Tasks. */
@@ -157,7 +156,7 @@ static void lMAIN_TASK_Tasks(  void *pvParameters  )
     while(true)
     {
         MAIN_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
+        vTaskDelay(500U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the CAN_READ_TASK_Tasks. */
@@ -167,7 +166,6 @@ static void lCAN_READ_TASK_Tasks(  void *pvParameters  )
 {   
     while(true)
     {
-        
         CAN_READ_TASK_Tasks();
         vTaskDelay(50U / portTICK_PERIOD_MS);
     }
@@ -270,7 +268,7 @@ void SYS_Tasks ( void )
                 "MAIN_TASK_Tasks",
                 1024,
                 NULL,
-                1,
+                5,
                 &xMAIN_TASK_Tasks);
 
     /* Create OS Thread for CAN_READ_TASK_Tasks. */
