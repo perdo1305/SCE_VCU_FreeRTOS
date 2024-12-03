@@ -132,6 +132,7 @@ void MAIN_TASK_Tasks ( void )
         {
             GPIO_RC11_Toggle();
            // printf("\r\n ola led");
+            printf("\n\rMain\n\r");
             break;
         }
 

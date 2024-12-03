@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    apps_task.c
+    can_read_task.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -27,16 +27,11 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include <stdio.h>
-
-#include "apps_task.h"
-#include "peripheral/adchs/plib_adchs.h"
-#ifndef FREERTOS_H
-    #include"FreeRTOS.h"
-#endif
-#include "semphr.h"
+#include "can_read_task.h"
+#include "peripheral/canfd/plib_canfd1.h"
+#include "peripheral/adchs/plib_adchs_common.h"
+#include "peripheral/gpio/plib_gpio.h"
 #include "definitions.h"
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data Definitions
@@ -53,15 +48,12 @@
     This structure holds the application's data.
 
   Remarks:
-    This structure should be initialized by the APPS_TASK_Initialize function.
+    This structure should be initialized by the CAN_READ_TASK_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
 */
 
-APPS_TASK_DATA apps_taskData;
-
-static SemaphoreHandle_t ADC0_SEMAPHORE;
-static SemaphoreHandle_t ADC3_SEMAPHORE;
+CAN_READ_TASK_DATA can_read_taskData;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -72,24 +64,6 @@ static SemaphoreHandle_t ADC3_SEMAPHORE;
 /* TODO:  Add any necessary callback functions.
 */
 
-
-
-void ADC0_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
-    static BaseType_t xHigherPriorityTaskWoken;
-    xHigherPriorityTaskWoken = pdFALSE;
-    printf("\n\n\rADC0 int\n\n\r");
-    xSemaphoreGiveFromISR(ADC0_SEMAPHORE, &xHigherPriorityTaskWoken);
-}
-
-
-void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
-    static BaseType_t xHigherPriorityTaskWoken;
-    xHigherPriorityTaskWoken = pdFALSE;
-    printf("\n\n\rADC3 int\n\n\r");
-
-    xSemaphoreGiveFromISR(ADC0_SEMAPHORE, &xHigherPriorityTaskWoken);
-}
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Local Functions
@@ -99,6 +73,22 @@ void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
 
 /* TODO:  Add any necessary local functions.
 */
+void task_function();
+
+
+void task_function(){
+    printf("\n\rCAN read\n\r");
+    CANFD_MSG_RX_ATTRIBUTE msgAttr;
+    uint8_t lenght;
+    uint8_t rx_message[8];
+    if(CAN1_MessageReceive(&can_read_taskData.id,&lenght,rx_message, 0, 2,&msgAttr)==true){
+        //CAN1_MessageTransmit(0x200,lenght,can_read_taskData.rx_message,0, CANFD_MODE_NORMAL, CANFD_MSG_TX_DATA_FRAME);
+        LED_F1_Toggle();
+    }
+    else{
+        taskYIELD();
+    }
+}
 
 
 // *****************************************************************************
@@ -109,47 +99,41 @@ void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
 
 /*******************************************************************************
   Function:
-    void APPS_TASK_Initialize ( void )
+    void CAN_READ_TASK_Initialize ( void )
 
   Remarks:
-    See prototype in apps_task.h.
+    See prototype in can_read_task.h.
  */
 
-void APPS_TASK_Initialize ( void )
+void CAN_READ_TASK_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    apps_taskData.state = APPS_TASK_STATE_INIT;
+    can_read_taskData.state = CAN_READ_TASK_STATE_INIT;
 
-
+    CAN1_Initialize();
 
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
-    
-    ADCHS_CallbackRegister(ADCHS_CH0,ADC0_callback,(uintptr_t)NULL);
-    ADCHS_CallbackRegister(ADCHS_CH3,ADC3_callback,(uintptr_t)NULL);
-    vSemaphoreCreateBinary(ADC3_SEMAPHORE);
-    vSemaphoreCreateBinary(ADC0_SEMAPHORE);
-    
 }
 
 
 /******************************************************************************
   Function:
-    void APPS_TASK_Tasks ( void )
+    void CAN_READ_TASK_Tasks ( void )
 
   Remarks:
-    See prototype in apps_task.h.
+    See prototype in can_read_task.h.
  */
 
-void APPS_TASK_Tasks ( void )
+void CAN_READ_TASK_Tasks ( void )
 {
 
     /* Check the application's current state. */
-    switch ( apps_taskData.state )
+    switch ( can_read_taskData.state )
     {
         /* Application's initial state. */
-        case APPS_TASK_STATE_INIT:
+        case CAN_READ_TASK_STATE_INIT:
         {
             bool appInitialized = true;
 
@@ -157,41 +141,20 @@ void APPS_TASK_Tasks ( void )
             if (appInitialized)
             {
 
-                apps_taskData.state = APPS_TASK_STATE_SERVICE_TASKS;
+                can_read_taskData.state = CAN_READ_TASK_STATE_SERVICE_TASKS;
             }
             break;
         }
 
-        case APPS_TASK_STATE_SERVICE_TASKS:
+        case CAN_READ_TASK_STATE_SERVICE_TASKS:
         {
-            /*
-            ADCHS_ChannelConversionStart(ADCHS_CH3);
-            ADCHS_ChannelConversionStart(ADCHS_CH0);
-
-        if(xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-        // Task unblocks here when semaphore is given
-        }
-            
-//        printf("\n\n\r Ended conversion\n\n\r");
-        //if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-        // Task unblocks here when semaphore is given
-        //}
-        uint16_t adc0value = ADCHS_ChannelResultGet(ADCHS_CH0);
-        uint16_t adc3value = ADCHS_ChannelResultGet(ADCHS_CH3);
-        
-        float voltage0 = adc0value * 1024 / 3.3;
-        float voltage3 = adc3value * 1024 / 3.3;
-        voltage0 = voltage0 + 0;
-        voltage3 = voltage3 + 0;
-        printf("APPS 1: %f      APPS 3: %f",voltage0,voltage3); 
-      */
-            //LED_F1_Toggle();
-            printf("\n\rAPPS\n\r");
+            task_function();
             break;
         }
 
         /* TODO: implement your application state machine.*/
-          
+
+
         /* The default state should never be executed. */
         default:
         {

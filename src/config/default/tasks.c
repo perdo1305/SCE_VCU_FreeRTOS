@@ -93,6 +93,17 @@ static void lMAIN_TASK_Tasks(  void *pvParameters  )
         vTaskDelay(500U / portTICK_PERIOD_MS);
     }
 }
+/* Handle for the CAN_READ_TASK_Tasks. */
+TaskHandle_t xCAN_READ_TASK_Tasks;
+
+static void lCAN_READ_TASK_Tasks(  void *pvParameters  )
+{   
+    while(true)
+    {
+        CAN_READ_TASK_Tasks();
+        vTaskDelay(50U / portTICK_PERIOD_MS);
+    }
+}
 
 
 
@@ -145,6 +156,14 @@ void SYS_Tasks ( void )
                 NULL,
                 -2,
                 &xMAIN_TASK_Tasks);
+
+    /* Create OS Thread for CAN_READ_TASK_Tasks. */
+    (void) xTaskCreate((TaskFunction_t) lCAN_READ_TASK_Tasks,
+                "CAN_READ_TASK_Tasks",
+                1024,
+                NULL,
+                5,
+                &xCAN_READ_TASK_Tasks);
 
 
 
