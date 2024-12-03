@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    apps_task.c
+    can_send_task.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -29,12 +29,8 @@
 
 #include <stdio.h>
 
-#include "apps_task.h"
-#include "peripheral/adchs/plib_adchs.h"
-#ifndef FREERTOS_H
-    #include"FreeRTOS.h"
-#endif
-#include "semphr.h"
+#include "can_send_task.h"
+//#include "peripheral/canfd/plib_canfd1.h"
 #include "definitions.h"
 
 // *****************************************************************************
@@ -53,15 +49,12 @@
     This structure holds the application's data.
 
   Remarks:
-    This structure should be initialized by the APPS_TASK_Initialize function.
+    This structure should be initialized by the CAN_SEND_TASK_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
 */
 
-APPS_TASK_DATA apps_taskData;
-
-static SemaphoreHandle_t ADC0_SEMAPHORE;
-static SemaphoreHandle_t ADC3_SEMAPHORE;
+CAN_SEND_TASK_DATA can_send_taskData;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -72,24 +65,6 @@ static SemaphoreHandle_t ADC3_SEMAPHORE;
 /* TODO:  Add any necessary callback functions.
 */
 
-
-
-void ADC0_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
-    static BaseType_t xHigherPriorityTaskWoken;
-    xHigherPriorityTaskWoken = pdFALSE;
-    printf("\n\n\rADC0 int\n\n\r");
-    xSemaphoreGiveFromISR(ADC0_SEMAPHORE, &xHigherPriorityTaskWoken);
-}
-
-
-void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
-    static BaseType_t xHigherPriorityTaskWoken;
-    xHigherPriorityTaskWoken = pdFALSE;
-    printf("\n\n\rADC3 int\n\n\r");
-
-    xSemaphoreGiveFromISR(ADC0_SEMAPHORE, &xHigherPriorityTaskWoken);
-}
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Local Functions
@@ -99,6 +74,7 @@ void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
 
 /* TODO:  Add any necessary local functions.
 */
+CANFD_MSG_RX_ATTRIBUTE msgAttr = CANFD_MSG_RX_DATA_FRAME;
 
 
 // *****************************************************************************
@@ -109,47 +85,43 @@ void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
 
 /*******************************************************************************
   Function:
-    void APPS_TASK_Initialize ( void )
+    void CAN_SEND_TASK_Initialize ( void )
 
   Remarks:
-    See prototype in apps_task.h.
+    See prototype in can_send_task.h.
  */
 
-void APPS_TASK_Initialize ( void )
+void CAN_SEND_TASK_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    apps_taskData.state = APPS_TASK_STATE_INIT;
-
+    can_send_taskData.state = CAN_SEND_TASK_STATE_INIT;
+    
 
 
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
-    
-    ADCHS_CallbackRegister(ADCHS_CH0,ADC0_callback,(uintptr_t)NULL);
-    ADCHS_CallbackRegister(ADCHS_CH3,ADC3_callback,(uintptr_t)NULL);
-    vSemaphoreCreateBinary(ADC3_SEMAPHORE);
-    vSemaphoreCreateBinary(ADC0_SEMAPHORE);
+    CAN1_Initialize();
     
 }
 
 
 /******************************************************************************
   Function:
-    void APPS_TASK_Tasks ( void )
+    void CAN_SEND_TASK_Tasks ( void )
 
   Remarks:
-    See prototype in apps_task.h.
+    See prototype in can_send_task.h.
  */
 
-void APPS_TASK_Tasks ( void )
+void CAN_SEND_TASK_Tasks ( void )
 {
 
     /* Check the application's current state. */
-    switch ( apps_taskData.state )
+    switch ( can_send_taskData.state )
     {
         /* Application's initial state. */
-        case APPS_TASK_STATE_INIT:
+        case CAN_SEND_TASK_STATE_INIT:
         {
             bool appInitialized = true;
 
@@ -157,40 +129,32 @@ void APPS_TASK_Tasks ( void )
             if (appInitialized)
             {
 
-                apps_taskData.state = APPS_TASK_STATE_SERVICE_TASKS;
+                can_send_taskData.state = CAN_SEND_TASK_STATE_SERVICE_TASKS;
             }
             break;
         }
 
-        case APPS_TASK_STATE_SERVICE_TASKS:
+        case CAN_SEND_TASK_STATE_SERVICE_TASKS:
         {
-            /*
-            ADCHS_ChannelConversionStart(ADCHS_CH3);
-            ADCHS_ChannelConversionStart(ADCHS_CH0);
-
-        if(xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-        // Task unblocks here when semaphore is given
-        }
-            
-//        printf("\n\n\r Ended conversion\n\n\r");
-        //if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-        // Task unblocks here when semaphore is given
-        //}
-        uint16_t adc0value = ADCHS_ChannelResultGet(ADCHS_CH0);
-        uint16_t adc3value = ADCHS_ChannelResultGet(ADCHS_CH3);
-        
-        float voltage0 = adc0value * 1024 / 3.3;
-        float voltage3 = adc3value * 1024 / 3.3;
-        voltage0 = voltage0 + 0;
-        voltage3 = voltage3 + 0;
-        printf("APPS 1: %f      APPS 3: %f",voltage0,voltage3); 
-      */
-            LED_F1_Toggle();
+            printf("\n\rCAN task\n\r");
+            uint8_t message[64];
+      
+            for (int count = 8; count >=1; count--){
+                message[count - 1] = count;
+            }
+            if(CAN1_MessageTransmit(0x69, 8, message, 0, CANFD_MODE_NORMAL, CANFD_MSG_TX_DATA_FRAME)){
+                LED_RB10_Toggle();
+                
+            }else{
+                printf("Failed to transmit message");
+            }
             break;
+            
         }
 
         /* TODO: implement your application state machine.*/
-          
+
+
         /* The default state should never be executed. */
         default:
         {

@@ -193,6 +193,8 @@ void SYS_Initialize ( void* data )
 
 	UART1_Initialize();
 
+    CAN1_Initialize();
+
 
 
     /* MISRAC 2012 deviation block start */
@@ -204,6 +206,7 @@ void SYS_Initialize ( void* data )
 
 
     /* MISRAC 2012 deviation block end */
+    CAN_SEND_TASK_Initialize();
     APPS_TASK_Initialize();
     MAIN_TASK_Initialize();
 

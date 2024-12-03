@@ -57,6 +57,9 @@
 // Section: RTOS "Tasks" Handles
 // *****************************************************************************
 // *****************************************************************************
+/* Declaration of  CAN_SEND_TASK_Tasks task handle */
+extern TaskHandle_t xCAN_SEND_TASK_Tasks;
+
 /* Declaration of  APPS_TASK_Tasks task handle */
 extern TaskHandle_t xAPPS_TASK_Tasks;
 

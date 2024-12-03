@@ -14,6 +14,10 @@
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
       <entry>
+         <string>can1</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
          <string>core</string>
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
@@ -727,7 +731,7 @@
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP0_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
       &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
       &lt;/Boolean&gt;
       &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;can_send_task.c&lt;/Value&gt;
@@ -743,7 +747,7 @@
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP0_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
       &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
       &lt;/Boolean&gt;
       &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;can_send_task.h&lt;/Value&gt;
@@ -790,10 +794,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP2_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;voltage_measurement_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -806,10 +807,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP2_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;voltage_measurement_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -822,10 +820,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP3_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;inverter_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -838,10 +833,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP3_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;inverter_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -854,10 +846,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP4_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;dashboard_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -870,10 +859,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP4_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;dashboard_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -886,10 +872,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP5_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;oled_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -902,10 +885,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP5_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;oled_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -918,10 +898,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP6_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;r2d_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -934,10 +911,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP6_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;r2d_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -950,10 +924,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP7_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;as_emergency_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -966,10 +937,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP7_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;as_emergency_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -1014,10 +982,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP9_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;can_read_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -1030,10 +995,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP9_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
-      &lt;/Boolean&gt;
-      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
+      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;can_read_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -1295,7 +1257,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;GEN_APP_RTOS_TASK_0_PRIO&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;2&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;3&quot;/&gt;
     &lt;/Values&gt;
   &lt;/HarmonyCore&gt;
 &lt;/HarmonyCore&gt;
@@ -3452,7 +3414,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;GEN_APP_TASK_ENABLE_0&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
     &lt;/Values&gt;
   &lt;/HarmonyCore&gt;
 &lt;/HarmonyCore&gt;
@@ -6798,12 +6760,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="adchs" name="ADCHS_CONV_RATE0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;adchs&gt;
   &lt;adchs dnOrder=&quot;0&quot; id=&quot;ADCHS_CONV_RATE0&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;adchs&quot; value=&quot;1875.0001&quot;/&gt;
     &lt;/Values&gt;
   &lt;/adchs&gt;
@@ -6846,12 +6803,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="adchs" name="ADCHS_CONV_RATE3"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;adchs&gt;
   &lt;adchs dnOrder=&quot;0&quot; id=&quot;ADCHS_CONV_RATE3&quot;&gt;
-    &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
-      &lt;/Boolean&gt;
-    &lt;/Attributes&gt;
-    &lt;Values dnOrder=&quot;1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;adchs&quot; value=&quot;1875.0001&quot;/&gt;
     &lt;/Values&gt;
   &lt;/adchs&gt;
@@ -7255,7 +7207,7 @@
   &lt;adchs dnOrder=&quot;0&quot; id=&quot;ADCHS_TADC0&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
       &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
       &lt;/Boolean&gt;
     &lt;/Attributes&gt;
     &lt;Values dnOrder=&quot;1&quot;&gt;
@@ -7303,7 +7255,7 @@
   &lt;adchs dnOrder=&quot;0&quot; id=&quot;ADCHS_TADC3&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
       &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
       &lt;/Boolean&gt;
     &lt;/Attributes&gt;
     &lt;Values dnOrder=&quot;1&quot;&gt;
@@ -8486,6 +8438,3643 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="AUTO_DATA_BIT_TIMING_CALCULATION"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;AUTO_DATA_BIT_TIMING_CALCULATION&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="AUTO_NOMINAL_BIT_TIMING_CALCULATION"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;AUTO_NOMINAL_BIT_TIMING_CALCULATION&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CALCULATED_DATA_BITRATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CALCULATED_DATA_BITRATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;1000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CALCULATED_DATA_ERRORRATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CALCULATED_DATA_ERRORRATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;0.000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CALCULATED_NOMINAL_BITRATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CALCULATED_NOMINAL_BITRATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;1000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CALCULATED_NOMINAL_ERRORRATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CALCULATED_NOMINAL_ERRORRATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;0.000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO10_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO10_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO10_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO10_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO10_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO10_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO10_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO10_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO10_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO10_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO11_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO11_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO11_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO11_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO11_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO11_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO11_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO11_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO11_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO11_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO12_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO12_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO12_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO12_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO12_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO12_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO12_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO12_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO12_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO12_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO13_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO13_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO13_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO13_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO13_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO13_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO13_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO13_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO13_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO13_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO14_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO14_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO14_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO14_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO14_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO14_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO14_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO14_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO14_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO14_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO15_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO15_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO15_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO15_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO15_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO15_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO15_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO15_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO15_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO15_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO16_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO16_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO16_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO16_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO16_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO16_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO16_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO16_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO16_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO16_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO17_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO17_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO17_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO17_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO17_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO17_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO17_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO17_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO17_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO17_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO18_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO18_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO18_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO18_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO18_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO18_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO18_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO18_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO18_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO18_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO19_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO19_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO19_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO19_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO19_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO19_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO19_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO19_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO19_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO19_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO1_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO1_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO1_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO1_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO1_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO1_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO1_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO1_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;32&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO1_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO1_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO20_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO20_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO20_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO20_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO20_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO20_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO20_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO20_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO20_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO20_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO21_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO21_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO21_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO21_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO21_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO21_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO21_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO21_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO21_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO21_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO22_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO22_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO22_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO22_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO22_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO22_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO22_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO22_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO22_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO22_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO23_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO23_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO23_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO23_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO23_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO23_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO23_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO23_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO23_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO23_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO24_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO24_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO24_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO24_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO24_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO24_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO24_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO24_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO24_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO24_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO25_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO25_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO25_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO25_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO25_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO25_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO25_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO25_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO25_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO25_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO26_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO26_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO26_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO26_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO26_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO26_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO26_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO26_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO26_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO26_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO27_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO27_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO27_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO27_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO27_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO27_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO27_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO27_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO27_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO27_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO28_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO28_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO28_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO28_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO28_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO28_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO28_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO28_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO28_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO28_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO29_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO29_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO29_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO29_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO29_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO29_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO29_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO29_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO29_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO29_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO2_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO2_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO2_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO2_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO2_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO2_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO2_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO2_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;32&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO2_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO2_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO30_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO30_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO30_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO30_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO30_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO30_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO30_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO30_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO30_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO30_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO31_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO31_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO31_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO31_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO31_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO31_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO31_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO31_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO31_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO31_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO3_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO3_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO3_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO3_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO3_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO3_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO3_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO3_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO3_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO3_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO4_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO4_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO4_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO4_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO4_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO4_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO4_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO4_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO4_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO4_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO5_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO5_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO5_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO5_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO5_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO5_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO5_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO5_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO5_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO5_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO6_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO6_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO6_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO6_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO6_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO6_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO6_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO6_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO6_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO6_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO7_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO7_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO7_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO7_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO7_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO7_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO7_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO7_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO7_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO7_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO8_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO8_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO8_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO8_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO8_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO8_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO8_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO8_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO8_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO8_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO9_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO9_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO9_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO9_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO9_RTREN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO9_RTREN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO9_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO9_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FIFO9_TXEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FIFO9_TXEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER0_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER0_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER0_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER0_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER0_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER0_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER0_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER0_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER0_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER0_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER0_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER0_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER10_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER10_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER10_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER10_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER10_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER10_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER10_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER10_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER10_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER10_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER10_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER10_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER11_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER11_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER11_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER11_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER11_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER11_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER11_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER11_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER11_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER11_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER11_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER11_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER12_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER12_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER12_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER12_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER12_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER12_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER12_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER12_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER12_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER12_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER12_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER12_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER13_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER13_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER13_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER13_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER13_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER13_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER13_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER13_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER13_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER13_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER13_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER13_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER14_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER14_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER14_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER14_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER14_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER14_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER14_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER14_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER14_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER14_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER14_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER14_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER15_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER15_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER15_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER15_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER15_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER15_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER15_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER15_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER15_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER15_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER15_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER15_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER16_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER16_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER16_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER16_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER16_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER16_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER16_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER16_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER16_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER16_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER16_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER16_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER17_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER17_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER17_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER17_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER17_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER17_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER17_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER17_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER17_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER17_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER17_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER17_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER18_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER18_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER18_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER18_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER18_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER18_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER18_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER18_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER18_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER18_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER18_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER18_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER19_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER19_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER19_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER19_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER19_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER19_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER19_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER19_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER19_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER19_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER19_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER19_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER1_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER1_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER1_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER1_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER1_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER1_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER1_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER1_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER1_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER1_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER1_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER1_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER20_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER20_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER20_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER20_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER20_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER20_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER20_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER20_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER20_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER20_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER20_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER20_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER21_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER21_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER21_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER21_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER21_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER21_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER21_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER21_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER21_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER21_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER21_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER21_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER22_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER22_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER22_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER22_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER22_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER22_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER22_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER22_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER22_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER22_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER22_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER22_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER23_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER23_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER23_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER23_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER23_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER23_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER23_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER23_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER23_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER23_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER23_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER23_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER24_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER24_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER24_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER24_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER24_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER24_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER24_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER24_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER24_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER24_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER24_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER24_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER25_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER25_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER25_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER25_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER25_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER25_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER25_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER25_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER25_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER25_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER25_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER25_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER26_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER26_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER26_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER26_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER26_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER26_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER26_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER26_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER26_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER26_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER26_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER26_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER27_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER27_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER27_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER27_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER27_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER27_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER27_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER27_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER27_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER27_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER27_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER27_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER28_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER28_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER28_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER28_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER28_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER28_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER28_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER28_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER28_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER28_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER28_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER28_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER29_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER29_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER29_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER29_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER29_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER29_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER29_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER29_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER29_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER29_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER29_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER29_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER2_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER2_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER2_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER2_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER2_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER2_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER2_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER2_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER2_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER2_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER2_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER2_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER30_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER30_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER30_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER30_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER30_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER30_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER30_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER30_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER30_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER30_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER30_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER30_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER31_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER31_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER31_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER31_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER31_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER31_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER31_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER31_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER31_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER31_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER31_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER31_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER3_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER3_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER3_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER3_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER3_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER3_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER3_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER3_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER3_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER3_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER3_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER3_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER4_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER4_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER4_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER4_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER4_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER4_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER4_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER4_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER4_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER4_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER4_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER4_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER5_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER5_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER5_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER5_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER5_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER5_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER5_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER5_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER5_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER5_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER5_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER5_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER6_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER6_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER6_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER6_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER6_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER6_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER6_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER6_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER6_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER6_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER6_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER6_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER7_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER7_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER7_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER7_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER7_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER7_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER7_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER7_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER7_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER7_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER7_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER7_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER8_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER8_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER8_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER8_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER8_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER8_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER8_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER8_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER8_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER8_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER8_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER8_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER9_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER9_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER9_FIFO_SELECT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER9_FIFO_SELECT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER9_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER9_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER9_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER9_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER9_MASK_ID"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER9_MASK_ID&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN1_FILTER9_MASK_ID_DECIMAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN1_FILTER9_MASK_ID_DECIMAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_CORE_CLOCK_FREQ"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_CORE_CLOCK_FREQ&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;120000000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_CORE_SELECT_CLOCK_SOURCE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_CORE_SELECT_CLOCK_SOURCE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_IEC_REG"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_IEC_REG&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_IFS_REG"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_IFS_REG&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_INSTANCE_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_INSTANCE_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_INSTANCE_NUM"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_INSTANCE_NUM&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_INTERRUPT_COUNT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_INTERRUPT_COUNT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_INTERRUPT_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_INTERRUPT_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_OPMODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_OPMODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_TIMESTAMP_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_TIMESTAMP_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_TIMESTAMP_EOF"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_TIMESTAMP_EOF&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_TIMESTAMP_PRESCALER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_TIMESTAMP_PRESCALER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="CAN_TIMESTAMP_TSRES"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;CAN_TIMESTAMP_TSRES&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DATA_BITRATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DATA_BITRATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;1000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DATA_SAMPLE_POINT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DATA_SAMPLE_POINT&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;readOnly&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;82.5&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DATA_TIME_QUANTA_PERIOD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DATA_TIME_QUANTA_PERIOD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;25.000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DBT_BRP"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBT_BRP&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;readOnly&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;2&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DBT_SJW"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBT_SJW&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;7&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DBT_SYNC"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBT_SYNC&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DBT_TOTAL_TIME_QUANTA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBT_TOTAL_TIME_QUANTA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;40&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DBT_TSEG1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBT_TSEG1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;32&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="DBT_TSEG2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;DBT_TSEG2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;7&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="FIFO_OFFSET"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;FIFO_OFFSET&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;0xc&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="FILTER_OBJ_MASK_OFFSET"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;FILTER_OBJ_MASK_OFFSET&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;0x8&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="FILTER_OFFSET"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;FILTER_OFFSET&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;0x4&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBT_BRP"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBT_BRP&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;readOnly&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBT_SJW"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBT_SJW&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;1&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBT_SYNC"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBT_SYNC&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBT_TOTAL_TIME_QUANTA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBT_TOTAL_TIME_QUANTA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;120&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBT_TSEG1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBT_TSEG1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;118&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NBT_TSEG2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NBT_TSEG2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;1&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NOMINAL_BITRATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NOMINAL_BITRATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;1000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NOMINAL_SAMPLE_POINT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NOMINAL_SAMPLE_POINT&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;readOnly&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;99.166664&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NOMINAL_TIME_QUANTA_PERIOD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NOMINAL_TIME_QUANTA_PERIOD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;8.333&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NUMBER_OF_FIFO"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NUMBER_OF_FIFO&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="NUMBER_OF_FILTER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;NUMBER_OF_FILTER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="TX_EVENT_FIFO_MESSAGE_BUFFER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;TX_EVENT_FIFO_MESSAGE_BUFFER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;1&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="TX_EVENT_FIFO_USE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;TX_EVENT_FIFO_USE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="TX_QUEUE_MESSAGE_BUFFER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;TX_QUEUE_MESSAGE_BUFFER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="TX_QUEUE_MESSAGE_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;TX_QUEUE_MESSAGE_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="TX_QUEUE_PAYLOAD_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;TX_QUEUE_PAYLOAD_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="can1" name="TX_QUEUE_USE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;can1&gt;
+  &lt;can1 dnOrder=&quot;0&quot; id=&quot;TX_QUEUE_USE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/can1&gt;
+&lt;/can1&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
@@ -8498,10 +12087,11 @@
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;FreeRTOS&quot; x=&quot;140&quot; y=&quot;84&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;HarmonyCore&quot; x=&quot;394&quot; y=&quot;51&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;adchs&quot; x=&quot;15&quot; y=&quot;291&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;core&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;dfp&quot; x=&quot;120&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;stdio&quot; x=&quot;160&quot; y=&quot;173&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;uart1&quot; x=&quot;30&quot; y=&quot;160&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;can1&quot; x=&quot;270&quot; y=&quot;160&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;core&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;dfp&quot; x=&quot;120&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;stdio&quot; x=&quot;160&quot; y=&quot;173&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;uart1&quot; x=&quot;30&quot; y=&quot;160&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
   &lt;/UserData&gt;
@@ -8645,6 +12235,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_1_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_1_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;C1RX&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_1_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_1_MODE&quot;&gt;
@@ -8771,6 +12372,17 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_34_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_3_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_3_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;C1TX&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -8942,6 +12554,39 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_59_DIR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_59_DIR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;Out&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_59_FUNCTION_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_59_FUNCTION_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;LED_F1&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_59_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_59_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_59_MODE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_59_MODE&quot;&gt;
@@ -8969,6 +12614,39 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_5_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;DIGITAL&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_60_DIR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_60_DIR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;Out&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_60_FUNCTION_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_60_FUNCTION_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;LED_RB10&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_60_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_60_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -9066,7 +12744,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="CAN1_CLOCK_ENABLE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;CAN1_CLOCK_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;can1&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
 </value>
@@ -9076,7 +12756,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;CAN1_CLOCK_FREQUENCY&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;120000000&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -10861,7 +14541,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PMD5_REG_VALUE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;4077862718&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;3809427262&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -11077,6 +14757,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_B_TRIS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_B_TRIS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;1024&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_C_ANSEL"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_C_ANSEL&quot;&gt;
@@ -11093,6 +14784,17 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_C_TRIS&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;2048&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_F_TRIS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_F_TRIS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;2&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -11174,6 +14876,22 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_INPUT_FUNCTION_4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_INPUT_FUNCTION_4&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;C1RX&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_INPUT_PIN_0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_INPUT_PIN_0&quot;&gt;
@@ -11238,6 +14956,22 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_INPUT_PIN_4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_INPUT_PIN_4&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;36&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_OUTPUT_FUNCTION_0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_OUTPUT_FUNCTION_0&quot;&gt;
@@ -11254,6 +14988,22 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_OUTPUT_FUNCTION_1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_OUTPUT_FUNCTION_1&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;28&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_OUTPUT_PIN_0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_OUTPUT_PIN_0&quot;&gt;
@@ -11264,6 +15014,22 @@
     &lt;/Attributes&gt;
     &lt;Values dnOrder=&quot;1&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;RPC0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SYS_PORT_PPS_OUTPUT_PIN_1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;SYS_PORT_PPS_OUTPUT_PIN_1&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;RPB15&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -12042,9 +15808,31 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="USE_PPS_INPUT_4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;USE_PPS_INPUT_4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="USE_PPS_OUTPUT_0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;USE_PPS_OUTPUT_0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="USE_PPS_OUTPUT_1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;USE_PPS_OUTPUT_1&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
     &lt;/Values&gt;
@@ -12636,6 +16424,14 @@
          <hash>b192fe5874f3fb87a09be1b3829f1d650e54cebe189ec54760b0d168d575254d</hash>
       </entry>
       <entry>
+         <file>../src/can_send_task.c</file>
+         <hash>90b3a58088da703fe8f8bd5a614d8aaf8afeabd2c0be34564a522faa5ca4f6f7</hash>
+      </entry>
+      <entry>
+         <file>../src/can_send_task.h</file>
+         <hash>6eaf5eff2cc4e9e4348cde3838e0175accaef7cb53b1766cfee13c387676c4aa</hash>
+      </entry>
+      <entry>
          <file>../src/config/default/FreeRTOSConfig.h</file>
          <hash>35f907b1154033176dd4b5b49bce54efa02a4eba502e2899fd7f7ce0f3ad4607</hash>
       </entry>
@@ -12645,7 +16441,7 @@
       </entry>
       <entry>
          <file>../src/config/default/definitions.h</file>
-         <hash>fb82333c7104ea0a5de1662c02fd26a5034c3a4a61218b0d737c755bd64427ec</hash>
+         <hash>be3e437d20aa76913abb1d17b77f12702e504147270a0e7f4ba3d686ad45a4aa</hash>
       </entry>
       <entry>
          <file>../src/config/default/device.h</file>
@@ -12661,7 +16457,7 @@
       </entry>
       <entry>
          <file>../src/config/default/initialization.c</file>
-         <hash>0d4294c15d992b2e170a2b2a203566ad25fb8784c473ec3535393cca1f0837a3</hash>
+         <hash>0798444a4c20059c8652acbbfd0ff58a0f0480bfbb989d1afef8cb46305f79a3</hash>
       </entry>
       <entry>
          <file>../src/config/default/interrupts.c</file>
@@ -12692,8 +16488,20 @@
          <hash>dd5ab056c45fde6d45c65e87abf1b86d05c0e696ee3bac54a1ebc921ee2e26ff</hash>
       </entry>
       <entry>
+         <file>../src/config/default/peripheral/canfd/plib_canfd1.c</file>
+         <hash>ab7b211070a5b921b3ff29587523c9f7f3940d8196d9645c680426c959a985c1</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/canfd/plib_canfd1.h</file>
+         <hash>022d46ca04683c15b1a6cdb86baa08f7aaab73705570f3207e8293f6a930dc53</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/canfd/plib_canfd_common.h</file>
+         <hash>fbf5091541d361f023f2c1fa3f04173ed84db75e64f475d14e1919856f1bf620</hash>
+      </entry>
+      <entry>
          <file>../src/config/default/peripheral/clk/plib_clk.c</file>
-         <hash>d833ff49e96b66d4b76359212ea1c406eecf117ab44deb203f8993702db3131d</hash>
+         <hash>f2993b35137395faa24ebf9994513abd5dccdccf52ee1a2f28e8ee7e2e6a3e7d</hash>
       </entry>
       <entry>
          <file>../src/config/default/peripheral/clk/plib_clk.h</file>
@@ -12709,11 +16517,11 @@
       </entry>
       <entry>
          <file>../src/config/default/peripheral/gpio/plib_gpio.c</file>
-         <hash>4927762611ffe3241ba1f3e250c89687b1468cf2c30f2da44fa6f243e4e05759</hash>
+         <hash>0b42958d89f4f5f4e181cd0701ad16c484ce7aa9bc474e033c6ef5bcadb63078</hash>
       </entry>
       <entry>
          <file>../src/config/default/peripheral/gpio/plib_gpio.h</file>
-         <hash>3e7110a5267ee44b6800a2106f5ccb837280894b25a79a1a749c54b200a64adc</hash>
+         <hash>6c175cd97ef98c3b533ece5cbcccb0e2ff0af74eabd34439a5badbda35176186</hash>
       </entry>
       <entry>
          <file>../src/config/default/peripheral/uart/plib_uart1.c</file>
@@ -12733,11 +16541,11 @@
       </entry>
       <entry>
          <file>../src/config/default/sys_tasks.h</file>
-         <hash>6a6fd54a6021b5de1b5545236a11ef652ae51b39266f266218f0eab5555b773d</hash>
+         <hash>9d495f4689c71d90a9ead6fbd9fd52da87897d5bd3625dcc42162b7bde364496</hash>
       </entry>
       <entry>
          <file>../src/config/default/tasks.c</file>
-         <hash>98c36cb939c74c26da024c032c41ecd31b724d15170d89395b1f6b9a12644b84</hash>
+         <hash>d0602f9899c979b97e7f710cbafe324182438e03252e75c4303bc105515659dc</hash>
       </entry>
       <entry>
          <file>../src/config/default/toolchain_specifics.h</file>

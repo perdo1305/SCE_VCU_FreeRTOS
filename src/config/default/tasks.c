@@ -60,6 +60,17 @@
 // Section: RTOS "Tasks" Routine
 // *****************************************************************************
 // *****************************************************************************
+/* Handle for the CAN_SEND_TASK_Tasks. */
+TaskHandle_t xCAN_SEND_TASK_Tasks;
+
+static void lCAN_SEND_TASK_Tasks(  void *pvParameters  )
+{   
+    while(true)
+    {
+        CAN_SEND_TASK_Tasks();
+        vTaskDelay(100U / portTICK_PERIOD_MS);
+    }
+}
 /* Handle for the APPS_TASK_Tasks. */
 TaskHandle_t xAPPS_TASK_Tasks;
 
@@ -111,7 +122,15 @@ void SYS_Tasks ( void )
     
 
     /* Maintain the application's state machine. */
-        /* Create OS Thread for APPS_TASK_Tasks. */
+        /* Create OS Thread for CAN_SEND_TASK_Tasks. */
+    (void) xTaskCreate((TaskFunction_t) lCAN_SEND_TASK_Tasks,
+                "CAN_SEND_TASK_Tasks",
+                1024,
+                NULL,
+                3,
+                &xCAN_SEND_TASK_Tasks);
+
+    /* Create OS Thread for APPS_TASK_Tasks. */
     (void) xTaskCreate((TaskFunction_t) lAPPS_TASK_Tasks,
                 "APPS_TASK_Tasks",
                 1024,
