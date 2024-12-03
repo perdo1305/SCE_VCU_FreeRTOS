@@ -60,6 +60,7 @@
 #include "can_send_task.h"
 #include "apps_task.h"
 #include "main_task.h"
+#include "can_read_task.h"
 
 
 

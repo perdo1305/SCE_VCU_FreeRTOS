@@ -66,6 +66,9 @@ extern TaskHandle_t xAPPS_TASK_Tasks;
 /* Declaration of  MAIN_TASK_Tasks task handle */
 extern TaskHandle_t xMAIN_TASK_Tasks;
 
+/* Declaration of  CAN_READ_TASK_Tasks task handle */
+extern TaskHandle_t xCAN_READ_TASK_Tasks;
+
 
 
 

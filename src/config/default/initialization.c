@@ -209,6 +209,7 @@ void SYS_Initialize ( void* data )
     CAN_SEND_TASK_Initialize();
     APPS_TASK_Initialize();
     MAIN_TASK_Initialize();
+    CAN_READ_TASK_Initialize();
 
 
     EVIC_Initialize();

@@ -982,7 +982,10 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP9_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;can_read_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -995,7 +998,10 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP9_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;can_read_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -1085,6 +1091,7 @@
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;ENABLE_OSAL&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;HarmonyCore&quot; value=&quot;false&quot;/&gt;
+      &lt;User dnOrder=&quot;1&quot; value=&quot;false&quot;/&gt;
     &lt;/Values&gt;
   &lt;/HarmonyCore&gt;
 &lt;/HarmonyCore&gt;
@@ -3364,7 +3371,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="HarmonyCore" name="GEN_APP_RTOS_TASK_9_PRIO"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;GEN_APP_RTOS_TASK_9_PRIO&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;5&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/HarmonyCore&gt;
 &lt;/HarmonyCore&gt;
 </value>
@@ -3599,7 +3608,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;GEN_APP_TASK_ENABLE_9&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
     &lt;/Values&gt;
   &lt;/HarmonyCore&gt;
 &lt;/HarmonyCore&gt;
@@ -12078,7 +12087,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;401&quot; canvasWidth=&quot;549&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;GraphSettings canvasHeight=&quot;401&quot; canvasWidth=&quot;396&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;PowerProfiles dnOrder=&quot;1&quot;&gt;
       &lt;Profile dnOrder=&quot;0&quot; id=&quot;profile0&quot; name=&quot;Main&quot;/&gt;
     &lt;/PowerProfiles&gt;
@@ -16424,6 +16433,14 @@
          <hash>b192fe5874f3fb87a09be1b3829f1d650e54cebe189ec54760b0d168d575254d</hash>
       </entry>
       <entry>
+         <file>../src/can_read_task.c</file>
+         <hash>eaad9477017df8395ac8c6773c9919a4f7982a3241166f5d5b0317f666c2a8ab</hash>
+      </entry>
+      <entry>
+         <file>../src/can_read_task.h</file>
+         <hash>15d4ee297f4a1367d90205ccccdb22a626cc13c997689d7aa19af34ffa668908</hash>
+      </entry>
+      <entry>
          <file>../src/can_send_task.c</file>
          <hash>90b3a58088da703fe8f8bd5a614d8aaf8afeabd2c0be34564a522faa5ca4f6f7</hash>
       </entry>
@@ -16441,7 +16458,7 @@
       </entry>
       <entry>
          <file>../src/config/default/definitions.h</file>
-         <hash>be3e437d20aa76913abb1d17b77f12702e504147270a0e7f4ba3d686ad45a4aa</hash>
+         <hash>0c48f9cb3654634c25f5e5201ee2d1113280b2dd13ea76dbf9deedbf644e33be</hash>
       </entry>
       <entry>
          <file>../src/config/default/device.h</file>
@@ -16457,7 +16474,7 @@
       </entry>
       <entry>
          <file>../src/config/default/initialization.c</file>
-         <hash>0798444a4c20059c8652acbbfd0ff58a0f0480bfbb989d1afef8cb46305f79a3</hash>
+         <hash>5ff64dcf50273ac320e50ee2ba1887a150da3d7f63098b9a51011962a43d910f</hash>
       </entry>
       <entry>
          <file>../src/config/default/interrupts.c</file>
@@ -16541,11 +16558,11 @@
       </entry>
       <entry>
          <file>../src/config/default/sys_tasks.h</file>
-         <hash>9d495f4689c71d90a9ead6fbd9fd52da87897d5bd3625dcc42162b7bde364496</hash>
+         <hash>1f0262450866b08b2aba2ce1cced3ef20e15f608e65562222558e484b6481865</hash>
       </entry>
       <entry>
          <file>../src/config/default/tasks.c</file>
-         <hash>d0602f9899c979b97e7f710cbafe324182438e03252e75c4303bc105515659dc</hash>
+         <hash>f4404562115cc599fa1cc316559347554639e121751fddc1838979a89fc1304e</hash>
       </entry>
       <entry>
          <file>../src/config/default/toolchain_specifics.h</file>

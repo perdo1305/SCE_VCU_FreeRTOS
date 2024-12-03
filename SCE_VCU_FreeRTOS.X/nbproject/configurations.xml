@@ -72,6 +72,7 @@
       <itemPath>../src/main_task.h</itemPath>
       <itemPath>../src/apps_task.h</itemPath>
       <itemPath>../src/can_send_task.h</itemPath>
+      <itemPath>../src/can_read_task.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -150,6 +151,7 @@
       <itemPath>../src/main_task.c</itemPath>
       <itemPath>../src/apps_task.c</itemPath>
       <itemPath>../src/can_send_task.c</itemPath>
+      <itemPath>../src/can_read_task.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
