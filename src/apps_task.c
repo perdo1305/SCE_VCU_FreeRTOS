@@ -77,17 +77,23 @@ static SemaphoreHandle_t ADC3_SEMAPHORE;
 void ADC0_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
     static BaseType_t xHigherPriorityTaskWoken;
     xHigherPriorityTaskWoken = pdFALSE;
-    printf("\n\n\rADC0 int\n\n\r");
+    //printf("\n\n\rADC0 int\n\n\r");
+    ADCHS_ChannelResultGet(ADCHS_CH0);
     xSemaphoreGiveFromISR(ADC0_SEMAPHORE, &xHigherPriorityTaskWoken);
+    
+    portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
+    //taskYIELD();
 }
 
 
 void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
     static BaseType_t xHigherPriorityTaskWoken;
     xHigherPriorityTaskWoken = pdFALSE;
-    printf("\n\n\rADC3 int\n\n\r");
-
-    xSemaphoreGiveFromISR(ADC0_SEMAPHORE, &xHigherPriorityTaskWoken);
+   // printf("\n\n\rADC3 int\n\n\r");
+    ADCHS_ChannelResultGet(ADCHS_CH3);
+    xSemaphoreGiveFromISR(ADC3_SEMAPHORE, &xHigherPriorityTaskWoken);
+    portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
+    //taskYIELD();
 }
 
 // *****************************************************************************
@@ -164,29 +170,33 @@ void APPS_TASK_Tasks ( void )
 
         case APPS_TASK_STATE_SERVICE_TASKS:
         {
-            /*
-            ADCHS_ChannelConversionStart(ADCHS_CH3);
-            ADCHS_ChannelConversionStart(ADCHS_CH0);
+            
+            
+            if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
+         //Task unblocks here when semaphore is given
+                
+                ADCHS_ChannelConversionStart(ADCHS_CH3);
+        }
+            
 
         if(xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
         // Task unblocks here when semaphore is given
+            ADCHS_ChannelConversionStart(ADCHS_CH0);
         }
             
 //        printf("\n\n\r Ended conversion\n\n\r");
-        //if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-        // Task unblocks here when semaphore is given
-        //}
+        
         uint16_t adc0value = ADCHS_ChannelResultGet(ADCHS_CH0);
         uint16_t adc3value = ADCHS_ChannelResultGet(ADCHS_CH3);
         
-        float voltage0 = adc0value * 1024 / 3.3;
-        float voltage3 = adc3value * 1024 / 3.3;
+        float voltage0 = adc0value * 3.3/4096;
+        float voltage3 = adc3value * 3.3/4096;
         voltage0 = voltage0 + 0;
         voltage3 = voltage3 + 0;
-        printf("APPS 1: %f      APPS 3: %f",voltage0,voltage3); 
-      */
+        printf("APPS 1:%f,APPS 3:%f\r\n",voltage0,voltage3); 
+      
             //LED_F1_Toggle();
-            printf("\n\rAPPS\n\r");
+           // printf("\n\rAPPS\n\r");
             break;
         }
 

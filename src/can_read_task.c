@@ -77,7 +77,7 @@ void task_function();
 
 
 void task_function(){
-    printf("\n\rCAN read\n\r");
+   // printf("\n\rCAN read\n\r");
     CANFD_MSG_RX_ATTRIBUTE msgAttr;
     uint8_t lenght;
     uint8_t rx_message[8];
