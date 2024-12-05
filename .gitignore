@@ -57,3 +57,9 @@ _build/SCE_VCU_FreeRTOS/default/.cache/clangd/index/task.h.59F5BA9CC37D49A3.idx
 _build/SCE_VCU_FreeRTOS/default/.cache/clangd/index/timers.h.E38B4776F2A5F22A.idx
 
 _build/SCE_VCU_FreeRTOS/default/.cache/clangd/index/freertos_hooks.c.A530C2D1408CC7D0.idx
+
+*.hex
+
+SCE_VCU_FreeRTOS.X/nbproject/
+
+*.xml

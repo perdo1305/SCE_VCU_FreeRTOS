@@ -52,24 +52,24 @@
 #include <xc.h>
 #include "ISR_Support.h"
 
-    .extern  EXTERNAL_2_Handler
+    .extern  ADC_EOS_Handler
 
-    .section   .vector_13,code, keep
-    .equ     __vector_dispatch_13, IntVectorEXTERNAL_2_Handler
-    .global  __vector_dispatch_13
+    .section   .vector_101,code, keep
+    .equ     __vector_dispatch_101, IntVectorADC_EOS_Handler
+    .global  __vector_dispatch_101
     .set     nomicromips
     .set     noreorder
     .set     nomips16
     .set     noat
-    .ent  IntVectorEXTERNAL_2_Handler
+    .ent  IntVectorADC_EOS_Handler
 
-IntVectorEXTERNAL_2_Handler:
+IntVectorADC_EOS_Handler:
     portSAVE_CONTEXT
-    la    s6,  EXTERNAL_2_Handler
+    la    s6,  ADC_EOS_Handler
     jalr  s6
     nop
     portRESTORE_CONTEXT
-    .end   IntVectorEXTERNAL_2_Handler
+    .end   IntVectorADC_EOS_Handler
     .extern  ADC_DATA0_Handler
 
     .section   .vector_106,code, keep

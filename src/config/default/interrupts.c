@@ -67,7 +67,7 @@
 // Section: System Interrupt Vector declarations
 // *****************************************************************************
 // *****************************************************************************
-void EXTERNAL_2_Handler (void);
+void ADC_EOS_Handler (void);
 void ADC_DATA0_Handler (void);
 void ADC_DATA3_Handler (void);
 
@@ -79,9 +79,9 @@ void ADC_DATA3_Handler (void);
 // *****************************************************************************
 
 
-void EXTERNAL_2_Handler (void)
+void ADC_EOS_Handler (void)
 {
-    EXTERNAL_2_InterruptHandler();
+    ADC_EOS_InterruptHandler();
 }
 
 void ADC_DATA0_Handler (void)
