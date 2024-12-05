@@ -79,13 +79,13 @@ void task_function();
 void task_function(){
 
    // printf("\n\rCAN read\n\r");
-
+    LED_RA10_Toggle();
     CANFD_MSG_RX_ATTRIBUTE msgAttr;
     uint8_t lenght;
     uint8_t rx_message[8];
     if(CAN1_MessageReceive(&can_read_taskData.id,&lenght,rx_message, 0, 2,&msgAttr)==true){
         //CAN1_MessageTransmit(0x200,lenght,can_read_taskData.rx_message,0, CANFD_MODE_NORMAL, CANFD_MSG_TX_DATA_FRAME);
-        LED_F1_Toggle();
+        
     }
     else{
         taskYIELD();
