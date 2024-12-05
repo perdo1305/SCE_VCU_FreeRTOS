@@ -63,6 +63,12 @@ extern TaskHandle_t xCAN_SEND_TASK_Tasks;
 /* Declaration of  APPS_TASK_Tasks task handle */
 extern TaskHandle_t xAPPS_TASK_Tasks;
 
+/* Declaration of  VOLTAGE_MEASUREMENT_TASK_Tasks task handle */
+extern TaskHandle_t xVOLTAGE_MEASUREMENT_TASK_Tasks;
+
+/* Declaration of  R2D_TASK_Tasks task handle */
+extern TaskHandle_t xR2D_TASK_Tasks;
+
 /* Declaration of  MAIN_TASK_Tasks task handle */
 extern TaskHandle_t xMAIN_TASK_Tasks;
 

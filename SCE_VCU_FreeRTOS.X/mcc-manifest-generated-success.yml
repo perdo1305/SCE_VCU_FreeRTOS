@@ -2,11 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: SCE_VCU_FreeRTOS
-<<<<<<< HEAD
-creation_date: 2024-12-03T17:15:05.788Z[Europe/Lisbon]
-=======
-creation_date: 2024-12-05T14:25:35.921Z[Europe/Lisbon]
->>>>>>> origin/CAN
+creation_date: 2024-12-05T15:26:47.155Z[Europe/Lisbon]
 operating_system: Linux
 mcc_mode: IDE
 mcc_mode_version: v6.20
