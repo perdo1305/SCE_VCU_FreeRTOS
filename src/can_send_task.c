@@ -136,7 +136,7 @@ void CAN_SEND_TASK_Tasks ( void )
 
         case CAN_SEND_TASK_STATE_SERVICE_TASKS:
         {
-            printf("\n\rCAN task\n\r");
+          //  printf("\n\rCAN task\n\r");
             uint8_t message[64];
       
             for (int count = 8; count >=1; count--){
@@ -146,7 +146,7 @@ void CAN_SEND_TASK_Tasks ( void )
                 LED_RB10_Toggle();
                 
             }else{
-                printf("Failed to transmit message");
+            //    printf("Failed to transmit message");
             }
             break;
             

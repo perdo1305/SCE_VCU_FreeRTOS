@@ -1,3 +1,4 @@
 *.d
 *.o
 /SCE_VCU_FreeRTOS.X/build/
+SCE_VCU_FreeRTOS.X/dist/default/debug/memoryfile.xml
