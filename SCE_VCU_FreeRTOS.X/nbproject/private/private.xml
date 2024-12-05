@@ -8,16 +8,12 @@
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/third_party/rtos/FreeRTOS/Source/queue.c</file>
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/can_read_task.c</file>
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/config/default/tasks.c</file>
+            <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/r2d_task.c</file>
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/config/default/initialization.c</file>
-            <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c</file>
+            <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/voltage_measurement_task.c</file>
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/main.c</file>
-<<<<<<< HEAD
-            <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/can_read_task.c</file>
-            <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/config/default/tasks.c</file>
-=======
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/config/default/interrupts_a.S</file>
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/config/default/peripheral/adchs/plib_adchs.c</file>
->>>>>>> origin/CAN
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/main_task.c</file>
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/apps_task.c</file>
             <file>file:/home/brunovicente/projects/SCE_VCU_FreeRTOS/src/can_send_task.c</file>

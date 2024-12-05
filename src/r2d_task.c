@@ -98,7 +98,7 @@ void SOUND_R2DS(void) {
         Time = millis();
         buzzer_Clear();
     }
-    LED_RA10_Toggle();
+    LED_F1_Toggle();
 }
 
 
@@ -160,7 +160,7 @@ void R2D_TASK_Tasks ( void )
 
         case R2D_TASK_STATE_SERVICE_TASKS:
         {
-
+            SOUND_R2DS();
             break;
         }
 

@@ -135,10 +135,12 @@ void APPS_TASK_Initialize(void) {
 
     ADCHS_CallbackRegister(ADCHS_CH0, ADC0_callback, (uintptr_t) NULL);
     ADCHS_CallbackRegister(ADCHS_CH3, ADC3_callback, (uintptr_t) NULL);
-    vSemaphoreCreateBinary(ADC3_SEMAPHORE);
-    xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY);
+
     vSemaphoreCreateBinary(ADC0_SEMAPHORE);
     xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY);
+    
+        vSemaphoreCreateBinary(ADC3_SEMAPHORE);
+    xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY);
 }
 
 /******************************************************************************
@@ -168,9 +170,13 @@ void APPS_TASK_Tasks(void) {
 
         case APPS_TASK_STATE_SERVICE_TASKS:
         {
-            ADCHS_ChannelConversionStart(ADCHS_CH0);
             ADCHS_ChannelConversionStart(ADCHS_CH3);
-
+            ADCHS_ChannelConversionStart(ADCHS_CH0);
+            
+            if (xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
+                // Task unblocks here when semaphore is given
+                
+            }
             
             if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
                 //Task unblocks here when semaphore is given
@@ -179,10 +185,7 @@ void APPS_TASK_Tasks(void) {
             }
 
 
-            if (xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-                // Task unblocks here when semaphore is given
-                
-            }
+            
 
             //        printf("\n\n\r Ended conversion\n\n\r");
 
