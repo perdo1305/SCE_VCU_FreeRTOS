@@ -143,11 +143,12 @@ void CAN_SEND_TASK_Tasks ( void )
                 message[count - 1] = count;
             }
             if(CAN1_MessageTransmit(0x69, 8, message, 0, CANFD_MODE_NORMAL, CANFD_MSG_TX_DATA_FRAME)){
-                LED_RB10_Toggle();
+                
                 
             }else{
             //    printf("Failed to transmit message");
             }
+            LED_RB13_Toggle();
             break;
             
         }

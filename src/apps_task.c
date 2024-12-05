@@ -196,6 +196,7 @@ void APPS_TASK_Tasks(void) {
             printf("APPS 1:%f,APPS 3:%f\r\n", voltage0, voltage3);
 
             //LED_F1_Toggle();
+            LED_RB10_Toggle();
             // printf("\n\rAPPS\n\r");
             break;
         }

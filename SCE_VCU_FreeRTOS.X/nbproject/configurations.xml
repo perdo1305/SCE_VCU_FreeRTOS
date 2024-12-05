@@ -18,6 +18,9 @@
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
               <itemPath>../src/config/default/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="coretimer" displayName="coretimer" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/coretimer/plib_coretimer.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="evic" displayName="evic" projectFiles="true">
               <itemPath>../src/config/default/peripheral/evic/plib_evic.h</itemPath>
             </logicalFolder>
@@ -105,6 +108,9 @@
             </logicalFolder>
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
               <itemPath>../src/config/default/peripheral/clk/plib_clk.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="coretimer" displayName="coretimer" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/coretimer/plib_coretimer.c</itemPath>
             </logicalFolder>
             <logicalFolder name="evic" displayName="evic" projectFiles="true">
               <itemPath>../src/config/default/peripheral/evic/plib_evic.c</itemPath>

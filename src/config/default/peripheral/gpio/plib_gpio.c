@@ -61,9 +61,11 @@ void GPIO_Initialize ( void )
 {
 
     /* PORTA Initialization */
+    LATA = 0x0U; /* Initial Latch Value */
+    TRISACLR = 0x400U; /* Direction Control */
     /* PORTB Initialization */
     LATB = 0x0U; /* Initial Latch Value */
-    TRISBCLR = 0x400U; /* Direction Control */
+    TRISBCLR = 0x2400U; /* Direction Control */
     /* PORTC Initialization */
     LATC = 0x0U; /* Initial Latch Value */
     TRISCCLR = 0x800U; /* Direction Control */

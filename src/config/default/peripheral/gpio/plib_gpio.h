@@ -80,6 +80,15 @@
 #define GPIO_RD8_Get()               ((PORTD >> 8) & 0x1U)
 #define GPIO_RD8_PIN                  GPIO_PIN_RD8
 
+/*** Macros for buzzer pin ***/
+#define buzzer_Set()               (LATFSET = (1U<<0))
+#define buzzer_Clear()             (LATFCLR = (1U<<0))
+#define buzzer_Toggle()            (LATFINV= (1U<<0))
+#define buzzer_OutputEnable()      (TRISFCLR = (1U<<0))
+#define buzzer_InputEnable()       (TRISFSET = (1U<<0))
+#define buzzer_Get()               ((PORTF >> 0) & 0x1U)
+#define buzzer_PIN                  GPIO_PIN_RF0
+
 /*** Macros for LED_F1 pin ***/
 #define LED_F1_Set()               (LATFSET = (1U<<1))
 #define LED_F1_Clear()             (LATFCLR = (1U<<1))
@@ -97,6 +106,24 @@
 #define LED_RB10_InputEnable()       (TRISBSET = (1U<<10))
 #define LED_RB10_Get()               ((PORTB >> 10) & 0x1U)
 #define LED_RB10_PIN                  GPIO_PIN_RB10
+
+/*** Macros for LED_RB13 pin ***/
+#define LED_RB13_Set()               (LATBSET = (1U<<13))
+#define LED_RB13_Clear()             (LATBCLR = (1U<<13))
+#define LED_RB13_Toggle()            (LATBINV= (1U<<13))
+#define LED_RB13_OutputEnable()      (TRISBCLR = (1U<<13))
+#define LED_RB13_InputEnable()       (TRISBSET = (1U<<13))
+#define LED_RB13_Get()               ((PORTB >> 13) & 0x1U)
+#define LED_RB13_PIN                  GPIO_PIN_RB13
+
+/*** Macros for LED_RA10 pin ***/
+#define LED_RA10_Set()               (LATASET = (1U<<10))
+#define LED_RA10_Clear()             (LATACLR = (1U<<10))
+#define LED_RA10_Toggle()            (LATAINV= (1U<<10))
+#define LED_RA10_OutputEnable()      (TRISACLR = (1U<<10))
+#define LED_RA10_InputEnable()       (TRISASET = (1U<<10))
+#define LED_RA10_Get()               ((PORTA >> 10) & 0x1U)
+#define LED_RA10_PIN                  GPIO_PIN_RA10
 
 
 // *****************************************************************************

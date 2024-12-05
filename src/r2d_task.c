@@ -52,12 +52,9 @@
 
 R2D_TASK_DATA r2d_taskData;
 
-typedef struct {
-    bool isR2D;
-    bool R2D_last_state;
-    bool R2DS_as_played;
-} R2D_t;
-R2D_t R2D;
+unsigned int Time = 0;
+volatile int r2d = 0;
+
 
 // *****************************************************************************
 // *****************************************************************************
@@ -77,19 +74,35 @@ R2D_t R2D;
 
 /* TODO:  Add any necessary local functions.
 */
+
+unsigned int millis(void);
+
+unsigned int millis(void){
+  return (unsigned int)(CORETIMER_CounterGet() / (CORE_TIMER_FREQUENCY / 1000));
+}
+
+
 void SOUND_R2DS(void);
 
 void SOUND_R2DS(void) {
-    if (R2D.isR2D) {
-        if (!BUZZER_ON) {
-            if (!R2D.R2DS_as_played) {
-                TMR5_Start();
-                GPIO_RF0_pin_Clear();
-                R2D.R2DS_as_played = true;
+    if(r2d == 1){
+        if(buzzer_Get() == 0){
+            buzzer_Set();
+        }
+        else{
+            if(Time + 1000 < millis()){
+                buzzer_Clear();
             }
         }
+    }else{
+        Time = millis();
+        buzzer_Clear();
     }
+    LED_RA10_Toggle();
 }
+
+
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Initialization and State Machine Functions
