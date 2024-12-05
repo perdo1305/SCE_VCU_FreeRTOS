@@ -45,7 +45,8 @@ int main(void) {
     /* Initialize all modules */
     SYS_Initialize(NULL);
     
-    GPIO_RC11_Set();
+
+    
     
     while (true) {
         SYS_Tasks();

@@ -164,6 +164,7 @@ void APPS_TASK_Tasks ( void )
 
         case APPS_TASK_STATE_SERVICE_TASKS:
         {
+            /*
             ADCHS_ChannelConversionStart(ADCHS_CH3);
             ADCHS_ChannelConversionStart(ADCHS_CH0);
 
@@ -183,7 +184,9 @@ void APPS_TASK_Tasks ( void )
         voltage0 = voltage0 + 0;
         voltage3 = voltage3 + 0;
         printf("APPS 1: %f      APPS 3: %f",voltage0,voltage3); 
-      
+      */
+            //LED_F1_Toggle();
+            printf("\n\rAPPS\n\r");
             break;
         }
 

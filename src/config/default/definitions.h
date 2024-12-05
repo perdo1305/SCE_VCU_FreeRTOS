@@ -51,13 +51,16 @@
 #include <stdio.h>
 #include "peripheral/adchs/plib_adchs.h"
 #include "peripheral/uart/plib_uart1.h"
+#include "peripheral/canfd/plib_canfd1.h"
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/evic/plib_evic.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "can_send_task.h"
 #include "apps_task.h"
 #include "main_task.h"
+#include "can_read_task.h"
 
 
 
