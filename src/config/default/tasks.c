@@ -82,6 +82,28 @@ static void lAPPS_TASK_Tasks(  void *pvParameters  )
         vTaskDelay(500U / portTICK_PERIOD_MS);
     }
 }
+/* Handle for the VOLTAGE_MEASUREMENT_TASK_Tasks. */
+TaskHandle_t xVOLTAGE_MEASUREMENT_TASK_Tasks;
+
+static void lVOLTAGE_MEASUREMENT_TASK_Tasks(  void *pvParameters  )
+{   
+    while(true)
+    {
+        VOLTAGE_MEASUREMENT_TASK_Tasks();
+        vTaskDelay(1000U / portTICK_PERIOD_MS);
+    }
+}
+/* Handle for the R2D_TASK_Tasks. */
+TaskHandle_t xR2D_TASK_Tasks;
+
+static void lR2D_TASK_Tasks(  void *pvParameters  )
+{   
+    while(true)
+    {
+        R2D_TASK_Tasks();
+        vTaskDelay(500U / portTICK_PERIOD_MS);
+    }
+}
 /* Handle for the MAIN_TASK_Tasks. */
 TaskHandle_t xMAIN_TASK_Tasks;
 
@@ -148,6 +170,22 @@ void SYS_Tasks ( void )
                 NULL,
                 5,
                 &xAPPS_TASK_Tasks);
+
+    /* Create OS Thread for VOLTAGE_MEASUREMENT_TASK_Tasks. */
+    (void) xTaskCreate((TaskFunction_t) lVOLTAGE_MEASUREMENT_TASK_Tasks,
+                "VOLTAGE_MEASUREMENT_TASK_Tasks",
+                1024,
+                NULL,
+                1,
+                &xVOLTAGE_MEASUREMENT_TASK_Tasks);
+
+    /* Create OS Thread for R2D_TASK_Tasks. */
+    (void) xTaskCreate((TaskFunction_t) lR2D_TASK_Tasks,
+                "R2D_TASK_Tasks",
+                1024,
+                NULL,
+                3,
+                &xR2D_TASK_Tasks);
 
     /* Create OS Thread for MAIN_TASK_Tasks. */
     (void) xTaskCreate((TaskFunction_t) lMAIN_TASK_Tasks,
