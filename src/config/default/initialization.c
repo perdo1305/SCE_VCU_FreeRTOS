@@ -206,10 +206,8 @@ void SYS_Initialize ( void* data )
 
 
     /* MISRAC 2012 deviation block end */
-    CAN_SEND_TASK_Initialize();
-    APPS_TASK_Initialize();
+    VOLTAGE_MEASUREMENT_TASK_Initialize();
     MAIN_TASK_Initialize();
-    CAN_READ_TASK_Initialize();
 
 
     EVIC_Initialize();
