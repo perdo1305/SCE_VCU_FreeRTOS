@@ -146,7 +146,7 @@ void SYS_Tasks ( void )
                 "APPS_TASK_Tasks",
                 1024,
                 NULL,
-                1,
+                5,
                 &xAPPS_TASK_Tasks);
 
     /* Create OS Thread for MAIN_TASK_Tasks. */

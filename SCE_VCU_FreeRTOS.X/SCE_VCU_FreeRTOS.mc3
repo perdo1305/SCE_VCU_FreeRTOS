@@ -2465,7 +2465,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;GEN_APP_RTOS_TASK_1_PRIO&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;1&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;5&quot;/&gt;
     &lt;/Values&gt;
   &lt;/HarmonyCore&gt;
 &lt;/HarmonyCore&gt;
@@ -16559,15 +16559,15 @@
       </entry>
       <entry>
          <file>../src/config/default/interrupts.c</file>
-         <hash>f066342e04c62d894c4912e60940015c0415cce43ca375aab765758311bd5bbd</hash>
+         <hash>39e240da23c5923c2ba7f807f7bf59c2c1ac545ea818ef7ebb1b9f3af81553b1</hash>
       </entry>
       <entry>
          <file>../src/config/default/interrupts.h</file>
-         <hash>36216dc9e796d69f88b079f8d1521db438ea8fd915f44bd9a6fcd7d564a5d10b</hash>
+         <hash>1d699210f5a0aef1074fbb2a9517762dbf57cc17b01a77ce9e5d06c84f82d606</hash>
       </entry>
       <entry>
          <file>../src/config/default/interrupts_a.S</file>
-         <hash>05ea8ec09166135129faaaf3a25ef28dcc2690745a652de8b00a67eea495cfec</hash>
+         <hash>dd466732393e9f740ac55a7d935f8982862c3e5eef059e0a03e57078f409dcfa</hash>
       </entry>
       <entry>
          <file>../src/config/default/p32MK1024MCM064.ld</file>
@@ -16575,11 +16575,11 @@
       </entry>
       <entry>
          <file>../src/config/default/peripheral/adchs/plib_adchs.c</file>
-         <hash>28aa42d2b318b87efee712da53f45a2209a4f20e4bb7c674c9848e109f605be8</hash>
+         <hash>66c3e432fb75636f0a3633499dc9c9e48dfc90f7180b64fe82f382f07df6b330</hash>
       </entry>
       <entry>
          <file>../src/config/default/peripheral/adchs/plib_adchs.h</file>
-         <hash>f2b12690d16b961f17bb97b98a811a6f87b6c6aeac58cc4c1f01eefebf119c44</hash>
+         <hash>30d65054c6ecac10b86500c0443d14b5e973c02eb1ab061d3c65773dfa383973</hash>
       </entry>
       <entry>
          <file>../src/config/default/peripheral/adchs/plib_adchs_common.h</file>
@@ -16607,7 +16607,7 @@
       </entry>
       <entry>
          <file>../src/config/default/peripheral/evic/plib_evic.c</file>
-         <hash>5a2eb93a8d656bcb7cf17e083b8f9f23658794283064f7a36f95b81e0fd0ee48</hash>
+         <hash>86c659d13feca13afc6bb83a620a7e9df85792295ba1cfa62ae82bd777a0c229</hash>
       </entry>
       <entry>
          <file>../src/config/default/peripheral/evic/plib_evic.h</file>
@@ -16643,7 +16643,7 @@
       </entry>
       <entry>
          <file>../src/config/default/tasks.c</file>
-         <hash>f4404562115cc599fa1cc316559347554639e121751fddc1838979a89fc1304e</hash>
+         <hash>ed3d0836bc6b779e2c24fa0a8ee96efdf52e441d45b2c3aeda135374a30661d2</hash>
       </entry>
       <entry>
          <file>../src/config/default/toolchain_specifics.h</file>

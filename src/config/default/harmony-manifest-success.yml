@@ -4,7 +4,7 @@
 
 
 project: SCE_VCU_FreeRTOS
-creation_date: 2024-12-03T17:15:05.810Z[Europe/Lisbon]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2024-12-05T14:25:35.963Z[Europe/Lisbon]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Linux
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.5.0

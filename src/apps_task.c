@@ -32,7 +32,7 @@
 #include "apps_task.h"
 #include "peripheral/adchs/plib_adchs.h"
 #ifndef FREERTOS_H
-    #include"FreeRTOS.h"
+#include"FreeRTOS.h"
 #endif
 #include "semphr.h"
 #include "definitions.h"
@@ -56,7 +56,7 @@
     This structure should be initialized by the APPS_TASK_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
-*/
+ */
 
 APPS_TASK_DATA apps_taskData;
 
@@ -70,29 +70,31 @@ static SemaphoreHandle_t ADC3_SEMAPHORE;
 // *****************************************************************************
 
 /* TODO:  Add any necessary callback functions.
-*/
+ */
 
 
 
 void ADC0_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
-    static BaseType_t xHigherPriorityTaskWoken;
-    xHigherPriorityTaskWoken = pdFALSE;
+     
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
     //printf("\n\n\rADC0 int\n\n\r");
     ADCHS_ChannelResultGet(ADCHS_CH0);
     xSemaphoreGiveFromISR(ADC0_SEMAPHORE, &xHigherPriorityTaskWoken);
-    
-    portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
+
+    portEND_SWITCHING_ISR(xHigherPriorityTaskWoken);
+
+
     //taskYIELD();
 }
 
-
 void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
-    static BaseType_t xHigherPriorityTaskWoken;
-    xHigherPriorityTaskWoken = pdFALSE;
-   // printf("\n\n\rADC3 int\n\n\r");
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+    // printf("\n\n\rADC3 int\n\n\r");
     ADCHS_ChannelResultGet(ADCHS_CH3);
+    //IFS3CLR = _IFS3_AD1D3IF_MASK;
+    //IFS3bits.AD1D3IF = 0;
     xSemaphoreGiveFromISR(ADC3_SEMAPHORE, &xHigherPriorityTaskWoken);
-    portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
+    portEND_SWITCHING_ISR(xHigherPriorityTaskWoken);
     //taskYIELD();
 }
 
@@ -104,7 +106,7 @@ void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
 
 
 /* TODO:  Add any necessary local functions.
-*/
+ */
 
 
 // *****************************************************************************
@@ -121,8 +123,7 @@ void ADC3_callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
     See prototype in apps_task.h.
  */
 
-void APPS_TASK_Initialize ( void )
-{
+void APPS_TASK_Initialize(void) {
     /* Place the App state machine in its initial state. */
     apps_taskData.state = APPS_TASK_STATE_INIT;
 
@@ -131,14 +132,14 @@ void APPS_TASK_Initialize ( void )
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
-    
-    ADCHS_CallbackRegister(ADCHS_CH0,ADC0_callback,(uintptr_t)NULL);
-    ADCHS_CallbackRegister(ADCHS_CH3,ADC3_callback,(uintptr_t)NULL);
-    vSemaphoreCreateBinary(ADC3_SEMAPHORE);
-    vSemaphoreCreateBinary(ADC0_SEMAPHORE);
-    
-}
 
+    ADCHS_CallbackRegister(ADCHS_CH0, ADC0_callback, (uintptr_t) NULL);
+    ADCHS_CallbackRegister(ADCHS_CH3, ADC3_callback, (uintptr_t) NULL);
+    vSemaphoreCreateBinary(ADC3_SEMAPHORE);
+    xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY);
+    vSemaphoreCreateBinary(ADC0_SEMAPHORE);
+    xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY);
+}
 
 /******************************************************************************
   Function:
@@ -148,20 +149,17 @@ void APPS_TASK_Initialize ( void )
     See prototype in apps_task.h.
  */
 
-void APPS_TASK_Tasks ( void )
-{
+void APPS_TASK_Tasks(void) {
 
     /* Check the application's current state. */
-    switch ( apps_taskData.state )
-    {
-        /* Application's initial state. */
+    switch (apps_taskData.state) {
+            /* Application's initial state. */
         case APPS_TASK_STATE_INIT:
         {
             bool appInitialized = true;
 
 
-            if (appInitialized)
-            {
+            if (appInitialized) {
 
                 apps_taskData.state = APPS_TASK_STATE_SERVICE_TASKS;
             }
@@ -170,39 +168,39 @@ void APPS_TASK_Tasks ( void )
 
         case APPS_TASK_STATE_SERVICE_TASKS:
         {
-            
-            
-            if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-         //Task unblocks here when semaphore is given
-                
-                ADCHS_ChannelConversionStart(ADCHS_CH3);
-        }
-            
-
-        if(xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-        // Task unblocks here when semaphore is given
             ADCHS_ChannelConversionStart(ADCHS_CH0);
-        }
-            
-//        printf("\n\n\r Ended conversion\n\n\r");
-        
-        uint16_t adc0value = ADCHS_ChannelResultGet(ADCHS_CH0);
-        uint16_t adc3value = ADCHS_ChannelResultGet(ADCHS_CH3);
-        
-        float voltage0 = adc0value * 3.3/4096;
-        float voltage3 = adc3value * 3.3/4096;
-        voltage0 = voltage0 + 0;
-        voltage3 = voltage3 + 0;
-        printf("APPS 1:%f,APPS 3:%f\r\n",voltage0,voltage3); 
-      
+            ADCHS_ChannelConversionStart(ADCHS_CH3);
+            /*if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
+                //Task unblocks here when semaphore is given
+
+                
+            }
+
+
+            if (xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
+                // Task unblocks here when semaphore is given
+                
+            }*/
+
+            //        printf("\n\n\r Ended conversion\n\n\r");
+
+            uint16_t adc0value = ADCHS_ChannelResultGet(ADCHS_CH0);
+            uint16_t adc3value = ADCHS_ChannelResultGet(ADCHS_CH3);
+
+            float voltage0 = adc0value * 3.3 / 4096;
+            float voltage3 = adc3value * 3.3 / 4096;
+            voltage0 = voltage0 + 0;
+            voltage3 = voltage3 + 0;
+            printf("APPS 1:%f,APPS 3:%f\r\n", voltage0, voltage3);
+
             //LED_F1_Toggle();
-           // printf("\n\rAPPS\n\r");
+            // printf("\n\rAPPS\n\r");
             break;
         }
 
-        /* TODO: implement your application state machine.*/
-          
-        /* The default state should never be executed. */
+            /* TODO: implement your application state machine.*/
+
+            /* The default state should never be executed. */
         default:
         {
             /* TODO: Handle error in application's state machine. */
