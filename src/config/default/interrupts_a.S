@@ -52,24 +52,6 @@
 #include <xc.h>
 #include "ISR_Support.h"
 
-    .extern  EXTERNAL_2_Handler
-
-    .section   .vector_13,code, keep
-    .equ     __vector_dispatch_13, IntVectorEXTERNAL_2_Handler
-    .global  __vector_dispatch_13
-    .set     nomicromips
-    .set     noreorder
-    .set     nomips16
-    .set     noat
-    .ent  IntVectorEXTERNAL_2_Handler
-
-IntVectorEXTERNAL_2_Handler:
-    portSAVE_CONTEXT
-    la    s6,  EXTERNAL_2_Handler
-    jalr  s6
-    nop
-    portRESTORE_CONTEXT
-    .end   IntVectorEXTERNAL_2_Handler
     .extern  ADC_DATA0_Handler
 
     .section   .vector_106,code, keep
@@ -88,24 +70,6 @@ IntVectorADC_DATA0_Handler:
     nop
     portRESTORE_CONTEXT
     .end   IntVectorADC_DATA0_Handler
-    .extern  ADC_DATA1_Handler
-
-    .section   .vector_107,code, keep
-    .equ     __vector_dispatch_107, IntVectorADC_DATA1_Handler
-    .global  __vector_dispatch_107
-    .set     nomicromips
-    .set     noreorder
-    .set     nomips16
-    .set     noat
-    .ent  IntVectorADC_DATA1_Handler
-
-IntVectorADC_DATA1_Handler:
-    portSAVE_CONTEXT
-    la    s6,  ADC_DATA1_Handler
-    jalr  s6
-    nop
-    portRESTORE_CONTEXT
-    .end   IntVectorADC_DATA1_Handler
     .extern  ADC_DATA3_Handler
 
     .section   .vector_109,code, keep

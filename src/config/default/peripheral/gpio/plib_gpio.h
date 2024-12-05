@@ -80,6 +80,24 @@
 #define GPIO_RD8_Get()               ((PORTD >> 8) & 0x1U)
 #define GPIO_RD8_PIN                  GPIO_PIN_RD8
 
+/*** Macros for LED_F1 pin ***/
+#define LED_F1_Set()               (LATFSET = (1U<<1))
+#define LED_F1_Clear()             (LATFCLR = (1U<<1))
+#define LED_F1_Toggle()            (LATFINV= (1U<<1))
+#define LED_F1_OutputEnable()      (TRISFCLR = (1U<<1))
+#define LED_F1_InputEnable()       (TRISFSET = (1U<<1))
+#define LED_F1_Get()               ((PORTF >> 1) & 0x1U)
+#define LED_F1_PIN                  GPIO_PIN_RF1
+
+/*** Macros for LED_RB10 pin ***/
+#define LED_RB10_Set()               (LATBSET = (1U<<10))
+#define LED_RB10_Clear()             (LATBCLR = (1U<<10))
+#define LED_RB10_Toggle()            (LATBINV= (1U<<10))
+#define LED_RB10_OutputEnable()      (TRISBCLR = (1U<<10))
+#define LED_RB10_InputEnable()       (TRISBSET = (1U<<10))
+#define LED_RB10_Get()               ((PORTB >> 10) & 0x1U)
+#define LED_RB10_PIN                  GPIO_PIN_RB10
+
 
 // *****************************************************************************
 /* GPIO Port

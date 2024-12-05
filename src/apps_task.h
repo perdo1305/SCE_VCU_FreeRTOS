@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    main_task.h
+    apps_task.h
 
   Summary:
     This header file provides prototypes and definitions for the application.
@@ -13,13 +13,13 @@
   Description:
     This header file provides function prototypes and data type definitions for
     the application.  Some of these are required by the system (such as the
-    "MAIN_TASK_Initialize" and "MAIN_TASK_Tasks" prototypes) and some of them are only used
-    internally by the application (such as the "MAIN_TASK_STATES" definition).  Both
+    "APPS_TASK_Initialize" and "APPS_TASK_Tasks" prototypes) and some of them are only used
+    internally by the application (such as the "APPS_TASK_STATES" definition).  Both
     are defined here for convenience.
 *******************************************************************************/
 
-#ifndef _MAIN_TASK_H
-#define _MAIN_TASK_H
+#ifndef _APPS_TASK_H
+#define _APPS_TASK_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -61,11 +61,11 @@ extern "C" {
 typedef enum
 {
     /* Application's state machine's initial state. */
-    MAIN_TASK_STATE_INIT=0,
-    MAIN_TASK_STATE_SERVICE_TASKS,
+    APPS_TASK_STATE_INIT=0,
+    APPS_TASK_STATE_SERVICE_TASKS,
     /* TODO: Define states used by the application state machine. */
 
-} MAIN_TASK_STATES;
+} APPS_TASK_STATES;
 
 
 // *****************************************************************************
@@ -84,11 +84,11 @@ typedef enum
 typedef struct
 {
     /* The application's current state */
-    MAIN_TASK_STATES state;
+    APPS_TASK_STATES state;
 
     /* TODO: Define any additional data used by the application. */
 
-} MAIN_TASK_DATA;
+} APPS_TASK_DATA;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -106,7 +106,7 @@ typedef struct
 
 /*******************************************************************************
   Function:
-    void MAIN_TASK_Initialize ( void )
+    void APPS_TASK_Initialize ( void )
 
   Summary:
      MPLAB Harmony application initialization routine.
@@ -114,7 +114,7 @@ typedef struct
   Description:
     This function initializes the Harmony application.  It places the
     application in its initial state and prepares it to run so that its
-    MAIN_TASK_Tasks function can be called.
+    APPS_TASK_Tasks function can be called.
 
   Precondition:
     All other system initialization routines should be called before calling
@@ -128,19 +128,19 @@ typedef struct
 
   Example:
     <code>
-    MAIN_TASK_Initialize();
+    APPS_TASK_Initialize();
     </code>
 
   Remarks:
     This routine must be called from the SYS_Initialize function.
 */
 
-void MAIN_TASK_Initialize ( void );
+void APPS_TASK_Initialize ( void );
 
 
 /*******************************************************************************
   Function:
-    void MAIN_TASK_Tasks ( void )
+    void APPS_TASK_Tasks ( void )
 
   Summary:
     MPLAB Harmony Demo application tasks function
@@ -161,14 +161,14 @@ void MAIN_TASK_Initialize ( void );
 
   Example:
     <code>
-    MAIN_TASK_Tasks();
+    APPS_TASK_Tasks();
     </code>
 
   Remarks:
     This routine must be called from SYS_Tasks() routine.
  */
 
-void MAIN_TASK_Tasks( void );
+void APPS_TASK_Tasks( void );
 
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus
@@ -176,7 +176,7 @@ void MAIN_TASK_Tasks( void );
 #endif
 //DOM-IGNORE-END
 
-#endif /* _MAIN_TASK_H */
+#endif /* _APPS_TASK_H */
 
 /*******************************************************************************
  End of File

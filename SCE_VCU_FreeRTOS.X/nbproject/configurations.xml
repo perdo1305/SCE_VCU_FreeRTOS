@@ -11,6 +11,10 @@
               <itemPath>../src/config/default/peripheral/adchs/plib_adchs.h</itemPath>
               <itemPath>../src/config/default/peripheral/adchs/plib_adchs_common.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="canfd" displayName="canfd" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/canfd/plib_canfd1.h</itemPath>
+              <itemPath>../src/config/default/peripheral/canfd/plib_canfd_common.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
               <itemPath>../src/config/default/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
@@ -66,7 +70,9 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/main_task.h</itemPath>
-      <itemPath>../src/voltage_measurement_task.h</itemPath>
+      <itemPath>../src/apps_task.h</itemPath>
+      <itemPath>../src/can_send_task.h</itemPath>
+      <itemPath>../src/can_read_task.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -91,6 +97,9 @@
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="adchs" displayName="adchs" projectFiles="true">
               <itemPath>../src/config/default/peripheral/adchs/plib_adchs.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="canfd" displayName="canfd" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/canfd/plib_canfd1.c</itemPath>
             </logicalFolder>
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
               <itemPath>../src/config/default/peripheral/clk/plib_clk.c</itemPath>
@@ -140,7 +149,9 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/main_task.c</itemPath>
-      <itemPath>../src/voltage_measurement_task.c</itemPath>
+      <itemPath>../src/apps_task.c</itemPath>
+      <itemPath>../src/can_send_task.c</itemPath>
+      <itemPath>../src/can_read_task.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    main_task.c
+    can_send_task.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -27,7 +27,10 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include "main_task.h"
+#include <stdio.h>
+
+#include "can_send_task.h"
+//#include "peripheral/canfd/plib_canfd1.h"
 #include "definitions.h"
 
 // *****************************************************************************
@@ -46,12 +49,12 @@
     This structure holds the application's data.
 
   Remarks:
-    This structure should be initialized by the MAIN_TASK_Initialize function.
+    This structure should be initialized by the CAN_SEND_TASK_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
 */
 
-MAIN_TASK_DATA main_taskData;
+CAN_SEND_TASK_DATA can_send_taskData;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -71,6 +74,7 @@ MAIN_TASK_DATA main_taskData;
 
 /* TODO:  Add any necessary local functions.
 */
+CANFD_MSG_RX_ATTRIBUTE msgAttr = CANFD_MSG_RX_DATA_FRAME;
 
 
 // *****************************************************************************
@@ -81,41 +85,43 @@ MAIN_TASK_DATA main_taskData;
 
 /*******************************************************************************
   Function:
-    void MAIN_TASK_Initialize ( void )
+    void CAN_SEND_TASK_Initialize ( void )
 
   Remarks:
-    See prototype in main_task.h.
+    See prototype in can_send_task.h.
  */
 
-void MAIN_TASK_Initialize ( void )
+void CAN_SEND_TASK_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    main_taskData.state = MAIN_TASK_STATE_INIT;
-
+    can_send_taskData.state = CAN_SEND_TASK_STATE_INIT;
+    
 
 
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
+    CAN1_Initialize();
+    
 }
 
 
 /******************************************************************************
   Function:
-    void MAIN_TASK_Tasks ( void )
+    void CAN_SEND_TASK_Tasks ( void )
 
   Remarks:
-    See prototype in main_task.h.
+    See prototype in can_send_task.h.
  */
 
-void MAIN_TASK_Tasks ( void )
+void CAN_SEND_TASK_Tasks ( void )
 {
 
     /* Check the application's current state. */
-    switch ( main_taskData.state )
+    switch ( can_send_taskData.state )
     {
         /* Application's initial state. */
-        case MAIN_TASK_STATE_INIT:
+        case CAN_SEND_TASK_STATE_INIT:
         {
             bool appInitialized = true;
 
@@ -123,22 +129,32 @@ void MAIN_TASK_Tasks ( void )
             if (appInitialized)
             {
 
-                main_taskData.state = MAIN_TASK_STATE_SERVICE_TASKS;
+                can_send_taskData.state = CAN_SEND_TASK_STATE_SERVICE_TASKS;
             }
             break;
         }
 
-        case MAIN_TASK_STATE_SERVICE_TASKS:
+        case CAN_SEND_TASK_STATE_SERVICE_TASKS:
         {
-            GPIO_RC11_Toggle();
-           // printf("\r\n ola led");
-            printf("\n\rMain\n\r");
+            printf("\n\rCAN task\n\r");
+            uint8_t message[64];
+      
+            for (int count = 8; count >=1; count--){
+                message[count - 1] = count;
+            }
+            if(CAN1_MessageTransmit(0x69, 8, message, 0, CANFD_MODE_NORMAL, CANFD_MSG_TX_DATA_FRAME)){
+                LED_RB10_Toggle();
+                
+            }else{
+                printf("Failed to transmit message");
+            }
             break;
+            
         }
 
         /* TODO: implement your application state machine.*/
-        
-        
+
+
         /* The default state should never be executed. */
         default:
         {

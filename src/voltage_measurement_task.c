@@ -28,10 +28,6 @@
 // *****************************************************************************
 
 #include "voltage_measurement_task.h"
-#include "definitions.h"
-
-#include "../src/config/default/peripheral/adchs/plib_adchs_common.h"
-#include "../src/config/default/peripheral/adchs/plib_adchs.h" 
 
 // *****************************************************************************
 // *****************************************************************************
@@ -56,12 +52,6 @@
 
 VOLTAGE_MEASUREMENT_TASK_DATA voltage_measurement_taskData;
 
-SemaphoreHandle_t voltageMeasurementSemaphore;
-
-QueueHandle_t  voltageMeasurementQueue;
-
-__COHERENT uint16_t voltageMeasurementValue;
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -70,23 +60,6 @@ __COHERENT uint16_t voltageMeasurementValue;
 
 /* TODO:  Add any necessary callback functions.
 */
-void ADCHS_CH3_Callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
-    static BaseType_t xHigherPriorityTaskWoken;
-
-    xHigherPriorityTaskWoken = pdFALSE;
-    
-    xSemaphoreGiveFromISR(voltageMeasurementSemaphore, &xHigherPriorityTaskWoken);
-    
-     if (xHigherPriorityTaskWoken == pdTRUE) {
-        portYIELD();
-    }
-      
-     
-}
-
-EXTERNAL_2_InterruptHandler(){
-    
-}
 
 // *****************************************************************************
 // *****************************************************************************
@@ -118,22 +91,6 @@ void VOLTAGE_MEASUREMENT_TASK_Initialize ( void )
     /* Place the App state machine in its initial state. */
     voltage_measurement_taskData.state = VOLTAGE_MEASUREMENT_TASK_STATE_INIT;
 
-    //ADCHS_CallbackRegister(ADCHS_CH3, ADCHS_CH3_Callback, (uintptr_t)NULL);  // Voltage Measurement
-    //ADCHS_ChannelResultInterruptEnable(ADCHS_CH8);
-    
-    ADCHS_ModulesEnable(ADCHS_MODULE0_MASK);  // AN3
-    
-    
-    
-
-    //vSemaphoreCreateBinary(voltageMeasurementSemaphore);
-    
-    //xSemaphoreTake(voltageMeasurementSemaphore, 0);
-    
-    ADCHS_ChannelConversionStart(ADCHS_CH3);
-
-    //creating a queue for the voltage measurement
-    //voltageMeasurementQueue = xQueueCreate(10, sizeof(uint16_t));
 
 
     /* TODO: Initialize your application's state machine and other
@@ -172,28 +129,11 @@ void VOLTAGE_MEASUREMENT_TASK_Tasks ( void )
 
         case VOLTAGE_MEASUREMENT_TASK_STATE_SERVICE_TASKS:
         {
-          static uint16_t adcResult = 0;
-          static float volts = 0;
 
-         if(ADCHS_ChannelResultIsReady(ADCHS_CH3))
-        {
-             adcResult = ADCHS_ChannelResultGet(ADCHS_CH3);
-            
-            ADCHS_ChannelConversionStart(ADCHS_CH3);
+            break;
         }
 
-          volts = ((adcResult * 3.3) / 4095);
-          //xQueueSendToBack(voltageMeasurementQueue, &voltageMeasurementValue, 0);
-          printf("\n\rVoltage Measurement: %.2f", volts);
-          voltage_measurement_taskData.state = VOLTAGE_MEASUREMENT_TASK_STATE_SERVICE_TASKS;
-          
-           break;
-        }
-
-        /* TODO: implement your application state machine.*/
-
-
-        /* The default state should never be executed. */
+        /* TODO: implement y:664should never be executed. */
         default:
         {
             /* TODO: Handle error in application's state machine. */

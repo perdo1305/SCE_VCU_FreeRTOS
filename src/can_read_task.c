@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    main_task.c
+    can_read_task.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -27,9 +27,11 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include "main_task.h"
+#include "can_read_task.h"
+#include "peripheral/canfd/plib_canfd1.h"
+#include "peripheral/adchs/plib_adchs_common.h"
+#include "peripheral/gpio/plib_gpio.h"
 #include "definitions.h"
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data Definitions
@@ -46,12 +48,12 @@
     This structure holds the application's data.
 
   Remarks:
-    This structure should be initialized by the MAIN_TASK_Initialize function.
+    This structure should be initialized by the CAN_READ_TASK_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
 */
 
-MAIN_TASK_DATA main_taskData;
+CAN_READ_TASK_DATA can_read_taskData;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -71,6 +73,22 @@ MAIN_TASK_DATA main_taskData;
 
 /* TODO:  Add any necessary local functions.
 */
+void task_function();
+
+
+void task_function(){
+    printf("\n\rCAN read\n\r");
+    CANFD_MSG_RX_ATTRIBUTE msgAttr;
+    uint8_t lenght;
+    uint8_t rx_message[8];
+    if(CAN1_MessageReceive(&can_read_taskData.id,&lenght,rx_message, 0, 2,&msgAttr)==true){
+        //CAN1_MessageTransmit(0x200,lenght,can_read_taskData.rx_message,0, CANFD_MODE_NORMAL, CANFD_MSG_TX_DATA_FRAME);
+        LED_F1_Toggle();
+    }
+    else{
+        taskYIELD();
+    }
+}
 
 
 // *****************************************************************************
@@ -81,18 +99,18 @@ MAIN_TASK_DATA main_taskData;
 
 /*******************************************************************************
   Function:
-    void MAIN_TASK_Initialize ( void )
+    void CAN_READ_TASK_Initialize ( void )
 
   Remarks:
-    See prototype in main_task.h.
+    See prototype in can_read_task.h.
  */
 
-void MAIN_TASK_Initialize ( void )
+void CAN_READ_TASK_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    main_taskData.state = MAIN_TASK_STATE_INIT;
+    can_read_taskData.state = CAN_READ_TASK_STATE_INIT;
 
-
+    CAN1_Initialize();
 
     /* TODO: Initialize your application's state machine and other
      * parameters.
@@ -102,20 +120,20 @@ void MAIN_TASK_Initialize ( void )
 
 /******************************************************************************
   Function:
-    void MAIN_TASK_Tasks ( void )
+    void CAN_READ_TASK_Tasks ( void )
 
   Remarks:
-    See prototype in main_task.h.
+    See prototype in can_read_task.h.
  */
 
-void MAIN_TASK_Tasks ( void )
+void CAN_READ_TASK_Tasks ( void )
 {
 
     /* Check the application's current state. */
-    switch ( main_taskData.state )
+    switch ( can_read_taskData.state )
     {
         /* Application's initial state. */
-        case MAIN_TASK_STATE_INIT:
+        case CAN_READ_TASK_STATE_INIT:
         {
             bool appInitialized = true;
 
@@ -123,22 +141,20 @@ void MAIN_TASK_Tasks ( void )
             if (appInitialized)
             {
 
-                main_taskData.state = MAIN_TASK_STATE_SERVICE_TASKS;
+                can_read_taskData.state = CAN_READ_TASK_STATE_SERVICE_TASKS;
             }
             break;
         }
 
-        case MAIN_TASK_STATE_SERVICE_TASKS:
+        case CAN_READ_TASK_STATE_SERVICE_TASKS:
         {
-            GPIO_RC11_Toggle();
-           // printf("\r\n ola led");
-            printf("\n\rMain\n\r");
+            task_function();
             break;
         }
 
         /* TODO: implement your application state machine.*/
-        
-        
+
+
         /* The default state should never be executed. */
         default:
         {
