@@ -170,30 +170,11 @@ void APPS_TASK_Tasks(void) {
         {
             ADCHS_ChannelConversionStart(ADCHS_CH0);
             ADCHS_ChannelConversionStart(ADCHS_CH3);
-            /*if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
+
+            
+            if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
                 //Task unblocks here when semaphore is given
 
-<<<<<<< HEAD
-        if(xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-        // Task unblocks here when semaphore is given
-        }
-            
-//        printf("\n\n\r Ended conversion\n\n\r");
-        //if (xSemaphoreTake(ADC3_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
-        // Task unblocks here when semaphore is given
-        //}
-        uint16_t adc0value = ADCHS_ChannelResultGet(ADCHS_CH0);
-        uint16_t adc3value = ADCHS_ChannelResultGet(ADCHS_CH3);
-        
-        float voltage0 = adc0value * 1024 / 3.3;
-        float voltage3 = adc3value * 1024 / 3.3;
-        voltage0 = voltage0 + 0;
-        voltage3 = voltage3 + 0;
-        printf("APPS 1: %f      APPS 3: %f",voltage0,voltage3); 
-      */
-            //LED_F1_Toggle();
-            printf("\n\rAPPS\n\r");
-=======
                 
             }
 
@@ -201,7 +182,7 @@ void APPS_TASK_Tasks(void) {
             if (xSemaphoreTake(ADC0_SEMAPHORE, portMAX_DELAY) == pdTRUE) {
                 // Task unblocks here when semaphore is given
                 
-            }*/
+            }
 
             //        printf("\n\n\r Ended conversion\n\n\r");
 
@@ -216,7 +197,6 @@ void APPS_TASK_Tasks(void) {
 
             //LED_F1_Toggle();
             // printf("\n\rAPPS\n\r");
->>>>>>> origin/CAN
             break;
         }
 
