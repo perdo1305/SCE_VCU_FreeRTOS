@@ -60,26 +60,15 @@
 // Section: RTOS "Tasks" Routine
 // *****************************************************************************
 // *****************************************************************************
-/* Handle for the CAN_SEND_TASK_Tasks. */
-TaskHandle_t xCAN_SEND_TASK_Tasks;
+/* Handle for the VOLTAGE_MEASUREMENT_TASK_Tasks. */
+TaskHandle_t xVOLTAGE_MEASUREMENT_TASK_Tasks;
 
-static void lCAN_SEND_TASK_Tasks(  void *pvParameters  )
+static void lVOLTAGE_MEASUREMENT_TASK_Tasks(  void *pvParameters  )
 {   
     while(true)
     {
-        CAN_SEND_TASK_Tasks();
-        vTaskDelay(100U / portTICK_PERIOD_MS);
-    }
-}
-/* Handle for the APPS_TASK_Tasks. */
-TaskHandle_t xAPPS_TASK_Tasks;
-
-static void lAPPS_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        APPS_TASK_Tasks();
-        vTaskDelay(500U / portTICK_PERIOD_MS);
+        VOLTAGE_MEASUREMENT_TASK_Tasks();
+        vTaskDelay(200U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the MAIN_TASK_Tasks. */
@@ -91,17 +80,6 @@ static void lMAIN_TASK_Tasks(  void *pvParameters  )
     {
         MAIN_TASK_Tasks();
         vTaskDelay(500U / portTICK_PERIOD_MS);
-    }
-}
-/* Handle for the CAN_READ_TASK_Tasks. */
-TaskHandle_t xCAN_READ_TASK_Tasks;
-
-static void lCAN_READ_TASK_Tasks(  void *pvParameters  )
-{   
-    while(true)
-    {
-        CAN_READ_TASK_Tasks();
-        vTaskDelay(50U / portTICK_PERIOD_MS);
     }
 }
 
@@ -133,21 +111,13 @@ void SYS_Tasks ( void )
     
 
     /* Maintain the application's state machine. */
-        /* Create OS Thread for CAN_SEND_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lCAN_SEND_TASK_Tasks,
-                "CAN_SEND_TASK_Tasks",
-                1024,
-                NULL,
-                3,
-                &xCAN_SEND_TASK_Tasks);
-
-    /* Create OS Thread for APPS_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lAPPS_TASK_Tasks,
-                "APPS_TASK_Tasks",
+        /* Create OS Thread for VOLTAGE_MEASUREMENT_TASK_Tasks. */
+    (void) xTaskCreate((TaskFunction_t) lVOLTAGE_MEASUREMENT_TASK_Tasks,
+                "VOLTAGE_MEASUREMENT_TASK_Tasks",
                 1024,
                 NULL,
                 1,
-                &xAPPS_TASK_Tasks);
+                &xVOLTAGE_MEASUREMENT_TASK_Tasks);
 
     /* Create OS Thread for MAIN_TASK_Tasks. */
     (void) xTaskCreate((TaskFunction_t) lMAIN_TASK_Tasks,
@@ -156,14 +126,6 @@ void SYS_Tasks ( void )
                 NULL,
                 -2,
                 &xMAIN_TASK_Tasks);
-
-    /* Create OS Thread for CAN_READ_TASK_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lCAN_READ_TASK_Tasks,
-                "CAN_READ_TASK_Tasks",
-                1024,
-                NULL,
-                5,
-                &xCAN_READ_TASK_Tasks);
 
 
 

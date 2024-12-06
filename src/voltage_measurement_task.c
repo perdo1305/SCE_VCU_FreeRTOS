@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    can_send_task.c
+    voltage_measurement_task.c
 
   Summary:
     This file contains the source code for the MPLAB Harmony application.
@@ -27,11 +27,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include <stdio.h>
-
-#include "can_send_task.h"
-//#include "peripheral/canfd/plib_canfd1.h"
-#include "definitions.h"
+#include "voltage_measurement_task.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -49,12 +45,18 @@
     This structure holds the application's data.
 
   Remarks:
-    This structure should be initialized by the CAN_SEND_TASK_Initialize function.
+    This structure should be initialized by the VOLTAGE_MEASUREMENT_TASK_Initialize function.
 
     Application strings and buffers are be defined outside this structure.
 */
 
-CAN_SEND_TASK_DATA can_send_taskData;
+VOLTAGE_MEASUREMENT_TASK_DATA voltage_measurement_taskData;
+
+SemaphoreHandle_t voltageMeasurementSemaphore;
+
+QueueHandle_t  voltageMeasurementQueue;
+
+__COHERENT uint16_t voltageMeasurementValue;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -64,6 +66,23 @@ CAN_SEND_TASK_DATA can_send_taskData;
 
 /* TODO:  Add any necessary callback functions.
 */
+void ADCHS_CH3_Callback(ADCHS_CHANNEL_NUM channel, uintptr_t context) {
+    static BaseType_t xHigherPriorityTaskWoken;
+
+    xHigherPriorityTaskWoken = pdFALSE;
+    
+    xSemaphoreGiveFromISR(voltageMeasurementSemaphore, &xHigherPriorityTaskWoken);
+    
+     if (xHigherPriorityTaskWoken == pdTRUE) {
+        portYIELD();
+    }
+      
+     
+}
+
+EXTERNAL_2_InterruptHandler(){
+    
+}
 
 // *****************************************************************************
 // *****************************************************************************
@@ -74,7 +93,6 @@ CAN_SEND_TASK_DATA can_send_taskData;
 
 /* TODO:  Add any necessary local functions.
 */
-CANFD_MSG_RX_ATTRIBUTE msgAttr = CANFD_MSG_RX_DATA_FRAME;
 
 
 // *****************************************************************************
@@ -85,43 +103,57 @@ CANFD_MSG_RX_ATTRIBUTE msgAttr = CANFD_MSG_RX_DATA_FRAME;
 
 /*******************************************************************************
   Function:
-    void CAN_SEND_TASK_Initialize ( void )
+    void VOLTAGE_MEASUREMENT_TASK_Initialize ( void )
 
   Remarks:
-    See prototype in can_send_task.h.
+    See prototype in voltage_measurement_task.h.
  */
 
-void CAN_SEND_TASK_Initialize ( void )
+void VOLTAGE_MEASUREMENT_TASK_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    can_send_taskData.state = CAN_SEND_TASK_STATE_INIT;
+    voltage_measurement_taskData.state = VOLTAGE_MEASUREMENT_TASK_STATE_INIT;
+
+    //ADCHS_CallbackRegister(ADCHS_CH3, ADCHS_CH3_Callback, (uintptr_t)NULL);  // Voltage Measurement
+    //ADCHS_ChannelResultInterruptEnable(ADCHS_CH8);
     
+    ADCHS_ModulesEnable(ADCHS_MODULE0_MASK);  // AN3
+    
+    
+    
+
+    //vSemaphoreCreateBinary(voltageMeasurementSemaphore);
+    
+    //xSemaphoreTake(voltageMeasurementSemaphore, 0);
+    
+    ADCHS_ChannelConversionStart(ADCHS_CH3);
+
+    //creating a queue for the voltage measurement
+    //voltageMeasurementQueue = xQueueCreate(10, sizeof(uint16_t));
 
 
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
-    CAN1_Initialize();
-    
 }
 
 
 /******************************************************************************
   Function:
-    void CAN_SEND_TASK_Tasks ( void )
+    void VOLTAGE_MEASUREMENT_TASK_Tasks ( void )
 
   Remarks:
-    See prototype in can_send_task.h.
+    See prototype in voltage_measurement_task.h.
  */
 
-void CAN_SEND_TASK_Tasks ( void )
+void VOLTAGE_MEASUREMENT_TASK_Tasks ( void )
 {
 
     /* Check the application's current state. */
-    switch ( can_send_taskData.state )
+    switch ( voltage_measurement_taskData.state )
     {
         /* Application's initial state. */
-        case CAN_SEND_TASK_STATE_INIT:
+        case VOLTAGE_MEASUREMENT_TASK_STATE_INIT:
         {
             bool appInitialized = true;
 
@@ -129,33 +161,32 @@ void CAN_SEND_TASK_Tasks ( void )
             if (appInitialized)
             {
 
-                can_send_taskData.state = CAN_SEND_TASK_STATE_SERVICE_TASKS;
+                voltage_measurement_taskData.state = VOLTAGE_MEASUREMENT_TASK_STATE_SERVICE_TASKS;
             }
             break;
         }
 
-        case CAN_SEND_TASK_STATE_SERVICE_TASKS:
+        case VOLTAGE_MEASUREMENT_TASK_STATE_SERVICE_TASKS:
         {
-          //  printf("\n\rCAN task\n\r");
-            uint8_t message[64];
-      
-            for (int count = 8; count >=1; count--){
-                message[count - 1] = count;
-            }
-            if(CAN1_MessageTransmit(0x69, 8, message, 0, CANFD_MODE_NORMAL, CANFD_MSG_TX_DATA_FRAME)){
-                LED_RB10_Toggle();
-                
-            }else{
-            //    printf("Failed to transmit message");
-            }
-            break;
+          static uint16_t adcResult = 0;
+          static float volts = 0;
+
+         if(ADCHS_ChannelResultIsReady(ADCHS_CH3))
+        {
+             adcResult = ADCHS_ChannelResultGet(ADCHS_CH3);
             
+            ADCHS_ChannelConversionStart(ADCHS_CH3);
         }
 
-        /* TODO: implement your application state machine.*/
+          volts = ((adcResult * 3.3) / 4095);
+          //xQueueSendToBack(voltageMeasurementQueue, &voltageMeasurementValue, 0);
+          printf("\n\rVoltage Measurement: %.2f", volts);
+          voltage_measurement_taskData.state = VOLTAGE_MEASUREMENT_TASK_STATE_SERVICE_TASKS;
+          
+           break;
+        }
 
-
-        /* The default state should never be executed. */
+        /* TODO: implement y:664should never be executed. */
         default:
         {
             /* TODO: Handle error in application's state machine. */

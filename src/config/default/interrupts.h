@@ -57,6 +57,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
+void ADC_EOS_InterruptHandler( void );
 void ADC_DATA0_InterruptHandler( void );
 void ADC_DATA3_InterruptHandler( void );
 
