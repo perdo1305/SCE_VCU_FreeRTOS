@@ -54,7 +54,7 @@
 #include "definitions.h"
 #include "sys_tasks.h"
 
-
+//QueueHandle_t Inverter_control_Queue;
 // *****************************************************************************
 // *****************************************************************************
 // Section: RTOS "Tasks" Routine
@@ -91,6 +91,17 @@ static void lVOLTAGE_MEASUREMENT_TASK_Tasks(  void *pvParameters  )
     {
         VOLTAGE_MEASUREMENT_TASK_Tasks();
         vTaskDelay(1000U / portTICK_PERIOD_MS);
+    }
+}
+/* Handle for the INVERTER_TASK_Tasks. */
+TaskHandle_t xINVERTER_TASK_Tasks;
+
+static void lINVERTER_TASK_Tasks(  void *pvParameters  )
+{   
+    while(true)
+    {
+        INVERTER_TASK_Tasks();
+        vTaskDelay(50U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the R2D_TASK_Tasks. */
@@ -178,6 +189,14 @@ void SYS_Tasks ( void )
                 NULL,
                 1,
                 &xVOLTAGE_MEASUREMENT_TASK_Tasks);
+
+    /* Create OS Thread for INVERTER_TASK_Tasks. */
+    (void) xTaskCreate((TaskFunction_t) lINVERTER_TASK_Tasks,
+                "INVERTER_TASK_Tasks",
+                1024,
+                NULL,
+                3,
+                &xINVERTER_TASK_Tasks);
 
     /* Create OS Thread for R2D_TASK_Tasks. */
     (void) xTaskCreate((TaskFunction_t) lR2D_TASK_Tasks,
