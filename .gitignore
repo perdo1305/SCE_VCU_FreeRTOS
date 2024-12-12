@@ -2,3 +2,15 @@
 *.o
 /SCE_VCU_FreeRTOS.X/build/
 SCE_VCU_FreeRTOS.X/dist/default/debug/memoryfile.xml
+
+SCE_VCU_FreeRTOS.X/dist/default/production/memoryfile.xml
+
+SCE_VCU_FreeRTOS.X/dist/default/production/SCE_VCU_FreeRTOS.X.production.elf
+
+SCE_VCU_FreeRTOS.X/dist/default/production/SCE_VCU_FreeRTOS.X.production.hex
+
+SCE_VCU_FreeRTOS.X/dist/default/production/SCE_VCU_FreeRTOS.X.production.map
+
+SCE_VCU_FreeRTOS.X/nbproject/Makefile-genesis.properties
+
+SCE_VCU_FreeRTOS.X/nbproject/Makefile-default.mk

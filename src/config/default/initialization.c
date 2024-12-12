@@ -210,6 +210,7 @@ void SYS_Initialize ( void* data )
     CAN_SEND_TASK_Initialize();
     APPS_TASK_Initialize();
     VOLTAGE_MEASUREMENT_TASK_Initialize();
+    INVERTER_TASK_Initialize();
     R2D_TASK_Initialize();
     MAIN_TASK_Initialize();
     CAN_READ_TASK_Initialize();

@@ -28,14 +28,17 @@
 // *****************************************************************************
 
 #include <stdio.h>
-
 #include "apps_task.h"
+#include "inverter_task.h"
 #include "peripheral/adchs/plib_adchs.h"
 #ifndef FREERTOS_H
 #include"FreeRTOS.h"
 #endif
 #include "semphr.h"
 #include "definitions.h"
+#include "queue.h"
+
+
 
 // *****************************************************************************
 // *****************************************************************************
@@ -197,10 +200,11 @@ void APPS_TASK_Tasks(void) {
             voltage0 = voltage0 + 0;
             voltage3 = voltage3 + 0;
             printf("APPS 1:%f,APPS 3:%f\r\n", voltage0, voltage3);
-
+//            uint8_t message_to_queue = voltage0 * 100/3.3;
             //LED_F1_Toggle();
             LED_RB10_Toggle();
             // printf("\n\rAPPS\n\r");
+ //           xQueueSend(Inverter_control_Queue,&message_to_queue,portMAX_DELAY);
             break;
         }
 

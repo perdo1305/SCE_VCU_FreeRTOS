@@ -830,7 +830,10 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP3_C&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;inverter_task.c&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -843,7 +846,10 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;APP3_H&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
-      &lt;String dnOrder=&quot;0&quot; id=&quot;name&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+      &lt;String dnOrder=&quot;1&quot; id=&quot;name&quot;&gt;
         &lt;Value dnOrder=&quot;0&quot;&gt;inverter_task.h&lt;/Value&gt;
       &lt;/String&gt;
     &lt;/Attributes&gt;
@@ -2711,7 +2717,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="HarmonyCore" name="GEN_APP_RTOS_TASK_3_PRIO"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;GEN_APP_RTOS_TASK_3_PRIO&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;3&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/HarmonyCore&gt;
 &lt;/HarmonyCore&gt;
 </value>
@@ -3569,7 +3577,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;GEN_APP_TASK_ENABLE_3&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
     &lt;/Values&gt;
   &lt;/HarmonyCore&gt;
 &lt;/HarmonyCore&gt;
@@ -12384,6 +12392,39 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_23_FUNCTION_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_23_FUNCTION_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_23_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_23_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;AN8&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_23_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_23_MODE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="BSP_PIN_24_DIR"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;BSP_PIN_24_DIR&quot;&gt;
@@ -16874,7 +16915,7 @@
       </entry>
       <entry>
          <file>../src/config/default/definitions.h</file>
-         <hash>a9962a569f0f723c1286dfdfdf1633a8dd3f83e67fe976b49fe34799e2fdf5f5</hash>
+         <hash>c0d883540ea963d895ec2db658326d4fdc1f2401e3dc716130fa2bcdf1956974</hash>
       </entry>
       <entry>
          <file>../src/config/default/device.h</file>
@@ -16890,7 +16931,7 @@
       </entry>
       <entry>
          <file>../src/config/default/initialization.c</file>
-         <hash>1674553ac0c0748e03b28b7e401429aabcc0acb281f842863271e28eff27c495</hash>
+         <hash>b6116b0ef67758e2888944330d567f4b7817a8afe4a82eb60bc93cc8838e07e4</hash>
       </entry>
       <entry>
          <file>../src/config/default/interrupts.c</file>
@@ -16982,11 +17023,11 @@
       </entry>
       <entry>
          <file>../src/config/default/sys_tasks.h</file>
-         <hash>bcf451fe75d013f3422fbf47f82bd89be9bf5b3049260e0c1cd792b2da51ab18</hash>
+         <hash>7b668cf5711351325b3e1ac4af2fddf06cfa8ccf6011c516dc7415bb05aff5ea</hash>
       </entry>
       <entry>
          <file>../src/config/default/tasks.c</file>
-         <hash>96893a3fe749cd02f7ab3f3e6b4a7bf966e7a6b18e2fe78a08faf22ae0643f6a</hash>
+         <hash>a502337e75cecff012007b873cbba65da4dcf4716be0dd37363c1a3afb0e8aa9</hash>
       </entry>
       <entry>
          <file>../src/config/default/toolchain_specifics.h</file>
@@ -16995,6 +17036,14 @@
       <entry>
          <file>../src/config/default/user.h</file>
          <hash>451e0878e9fcf6cf9fab046c1452ea662757988346c7f39e6bc98478ca25f995</hash>
+      </entry>
+      <entry>
+         <file>../src/inverter_task.c</file>
+         <hash>22697f37da6ca93f330e9c07f4337364c42c53aea676fbe68fe75abbd3a3ea16</hash>
+      </entry>
+      <entry>
+         <file>../src/inverter_task.h</file>
+         <hash>9d2bb2961155a47288183a22776b6934cc3264fb728dd9732e5025f2a218ecca</hash>
       </entry>
       <entry>
          <file>../src/main.c</file>
